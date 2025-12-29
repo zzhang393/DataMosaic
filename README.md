@@ -1,4 +1,4 @@
-# DataMosaic: Document-to-Database Extraction Evaluation
+# DataMosaic: Document-to-Database Extraction
 
 This directory contains the evaluation code and datasets for the Doc2DB (Document-to-Database) system presented in our paper.
 
