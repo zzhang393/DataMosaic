@@ -8,17 +8,17 @@ DataMosaic bridges the gap between unstructured enterprise knowledge and structu
 
 DataMosaic solves this by mediating between LLM extraction and strict database logic. Instead of a one-shot prompt, it uses an orchestrator-managed closed loop to ensure the final database is not just filled with text, but is structurally sound and analytically useful.
 
-🌟 Key Features
+🌟 **Key Features**
 
-🏗️ Schema-Driven Extraction Unlike standard RAG or extraction tools, DataMosaic takes an ER Schema (with integrity and business constraints) as input. It ensures the extracted data actually fits your database structure.
+- 🏗️ **Schema-Driven Extraction** Unlike standard RAG or extraction tools, DataMosaic takes an ER Schema (with integrity and business constraints) as input. It ensures the extracted data actually fits your database structure.
 
-🔄 Closed-Loop Refinement Implements a robust Extraction → Verification → Repair loop. It automatically detects constraint violations (e.g., broken foreign keys) and performs targeted re-extraction to fix them.
+- 🔄 **Closed-Loop Refinement** Implements a robust Extraction → Verification → Repair loop. It automatically detects constraint violations (e.g., broken foreign keys) and performs targeted re-extraction to fix them.
 
-🛡️ Semantic Consistency Distinguishes between intrinsic document ambiguity and correctable extraction errors, ensuring the resulting database instance is high-quality and consistent.
+- 🛡️ **Semantic Consistency** Distinguishes between intrinsic document ambiguity and correctable extraction errors, ensuring the resulting database instance is high-quality and consistent.
 
-🔌 Pluggable Architecture Flexible design that supports third-party LLM extractors, domain-specific verifiers, and custom repair operators.
+- 🔌 **Pluggable Architecture** Flexible design that supports third-party LLM extractors, domain-specific verifiers, and custom repair operators.
 
-📈 Proven Performance Demonstrates substantial improvements in database-level accuracy and reduced constraint violations across Financial, Legal, and Academic domains compared to strong baselines.
+- 📈 **Proven Performance** Demonstrates substantial improvements in database-level accuracy and reduced constraint violations across Financial, Legal, and Academic domains compared to strong baselines.
 
 ## Directory Structure
 
