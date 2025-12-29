@@ -1,0 +1,105 @@
+{
+  "metadata": {
+    "version": "1.0.1",
+    "generator": "Finance Database Designer - Fixed",
+    "generated_at": "2025-09-26T00:00:00Z",
+    "tables_count": 2,
+    "relations_count": 3
+  },
+  "tables": [
+    {
+      "id": "table_1",
+      "name": "company",
+      "type": "entity",
+      "fields": [
+        { "name": "CompanyName", "type": "VARCHAR(255)", "constraints": { "unique": true, "nullable": false }, "description": "Full legal name of the company" },
+        { "name": "StockCode", "type": "VARCHAR(50)", "constraints": { "nullable": true }, "description": "Registered contact telephone number" },
+        { "name": "StockName", "type": "VARCHAR(50)", "constraints": { "nullable": true }, "description": "Headquarters or primary office address" }
+      ]
+    },
+    {
+      "id": "table_2",
+      "name": "holding",
+      "type": "relation",
+      "fields": [
+        { "name": "InvestorId", "type": "VARCHAR(10)", "constraints": { "foreign_key": true, "nullable": false }, "description": "References company.CompanyId ( The Investor )" },
+        { "name": "InvesteeId", "type": "VARCHAR(10)", "constraints": { "foreign_key": true, "nullable": false }, "description": "References company.CompanyId ( The Company being invested in )" }
+      ],
+      "relation_extraction": {
+        "enabled": true,
+        "document_sources": ["/home/zhangzhengxuan/Doc2DB/dataset/FinanceDB/case5/docs/report5-2.txt"
+        ],
+        "reference_tables": [
+          {"table": "company",
+            "data_source": "dataset/FinanceDB/case5/answer.json",
+            "key_fields": ["CompanyId"],
+            "role": "investor"},
+          {  "table": "company",
+            "data_source": "dataset/FinanceDB/case5/answer.json",
+            "key_fields": ["CompanyId"],
+            "role": "investee"}
+        ]
+      }
+    }
+  ],
+  "rules": [
+    {
+      "id": "phi_1",
+      "name": "no_mutual_investment",
+      "description": "No mutual investment: ¬(Hold(a,b) ∧ Hold(b,a)). Two companies cannot invest in each other simultaneously.",
+      "type": "LOGIC",
+      "severity": "ERROR",
+      "scope": "single_table",
+      "tables": ["holding"],
+      "enabled": true,
+      "validation_logic": {
+        "constraint": "For any two records, if InvestorId=A and InvesteeId=B, there implies no record where InvestorId=B and InvesteeId=A",
+        "check_method": "cross_reference",
+        "fields": ["InvestorId", "InvesteeId"]
+      },
+      "fix_strategy": {
+        "method": "llm_decision",
+        "description": "Use LLM to determine which investment relationship is more credible based on report context"
+      }
+    },
+    {
+      "id": "phi_2",
+      "name": "no_self_investment",
+      "description": "No self investment: InvestorId ≠ InvesteeId. A company cannot hold shares in itself.",
+      "type": "VALUE",
+      "severity": "ERROR",
+      "scope": "single_table",
+      "tables": ["holding"],
+      "enabled": true,
+      "validation_logic": {
+        "constraint": "The InvestorId must not equal the InvesteeId",
+        "check_method": "formula",
+        "formula": "InvestorId != InvesteeId",
+        "fields": ["InvestorId", "InvesteeId"]
+      },
+      "fix_strategy": {
+        "method": "prune_record",
+        "description": "Remove records where the investor and investee are the same entity as these are likely extraction errors"
+      }
+    },
+    {
+      "id": "phi_3",
+      "name": "recursive_investment_check",
+      "description": "Recursive investment analysis (Transitive Closure): Identify indirect control. Hold(a,b) ∧ Hold(b,c) implies indirect interest.",
+      "type": "LOGIC",
+      "severity": "INFO",
+      "scope": "single_table",
+      "tables": ["holding"],
+      "enabled": true,
+      "validation_logic": {
+        "constraint": "Analyze graph to find transitive chains (A->B->C)",
+        "check_method": "graph_analysis",
+        "fields": ["InvestorId", "InvesteeId"]
+      },
+      "fix_strategy": {
+        "method": "infer_missing",
+        "description": "Tag indirect relationships explicitly if required by the schema design"
+      }
+    }
+  ]
+}

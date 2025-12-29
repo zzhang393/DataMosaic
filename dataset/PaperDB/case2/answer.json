@@ -1,0 +1,624 @@
+{
+    "paper": [
+        {
+            "title": "Asymptotic Convergence in Online Learning with Unbounded Delays",
+            "abstract": "We study the problem of predicting the results of computations that are too expensive to run, via the observation of the results of smaller computations. We model this as an online learning problem with delayed feedback, where the length of the delay is unbounded, which we study mainly in a stochastic setting. We show that in this setting, consistency is not possible in general, and that optimal forecasters might not have average regret going to zero. However, it is still possible to give algorithms that converge asymptotically to Bayesoptimal predictions, by evaluating forecasters on specific sparse independent subsequences of their predictions. We give an algorithm that does this, which converges asymptotically on good behavior, and give very weak bounds on how long it takes to converge. We then relate our results back to the problem of predicting large computations in a deterministic setting.",
+            "keywords": null,
+            "publication_year": null,
+            "venue": null,
+            "doi_url": null,
+            "overview": "The paper introduces EvOp, an algorithm for online learning with unbounded delays that converges to Bayes-optimal behavior on subsequences where an expert is optimal, despite challenges with regret measures in such settings."
+        },
+        {
+            "title": "Churn analysis using deep convolutional neural networks and autoencoders",
+            "abstract": "Customer temporal behavioral data was represented as images in order to perform churn prediction by leveraging deep learning architectures prominent in image classification. Supervised learning was performed on labeled data of over 6 million customers using deep convolutional neural networks, which achieved an AUC of 0.743 on the test dataset using no more than 12 temporal features for each customer. Unsupervised learning was conducted using autoencoders to better understand the reasons for customer churn. Images that maximally activate the hidden units of an autoencoder trained with churned customers reveal ample opportunities for action to be taken to prevent churn among strong data, no voice users.",
+            "keywords": "machine learning, deep learning, big data, churn prediction, telecommunications",
+            "publication_year": null,
+            "venue": null,
+            "doi_url": null,
+            "overview": "This paper presents a method using deep convolutional neural networks to represent customer behavioral data as images for churn prediction, achieving superior results over traditional models, and employs autoencoders to understand behavior patterns of customers who churn, suggesting actionable insights to prevent churn."
+          },
+          {
+            "title": "Lightweight compression with encryption based on Asymmetric Numeral Systems",
+            "abstract": "Data compression combined with effective encryption is a common requirement of data storage and transmission. Low cost of these operations is often a high priority in order to increase transmission speed and reduce power usage. This requirement is crucial for battery-powered devices with limited resources, such as autonomous remote sensors or implants. Well-known and popular encryption techniques are frequently too expensive. This problem is on the increase as machineto-machine communication and the Internet of Things are becoming a reality. Therefore, there is growing demand for finding trade-offs between security, cost and performance in lightweight cryptography. This article discusses Asymmetric Numeral Systems - an innovative approach to entropy coding which can be used for compression with encryption. It provides compression ratio comparable with arithmetic coding at similar speed as Huffman coding, hence, this coding is starting to replace them in new compressors. Additionally, by perturbing its coding tables, the Asymmetric Numeral System makes it possible to simultaneously encrypt the encoded message at nearly no additional cost. The article introduces this approach and analyzes its security level. The basic application is reducing the number of rounds of some cipher used on ANS-compressed data, or completely removing additional encryption layer if reaching a satisfactory protection level.",
+            "keywords": null,
+            "publication_year": 2024,
+            "venue": null,
+            "doi_url": null,
+            "overview": "Proposes combining compression and encryption via ANS, achieving efficient compression with built-in encryption suitable for lightweight cryptography."
+          }
+    ],
+    "author": [
+        {
+            "name": "Scott Garrabrant",
+            "affiliation": "Machine Intelligence Research Institute",
+            "email": "scott@intelligence.org"
+        },
+        {
+            "name": "Nate Soares",
+            "affiliation": "Machine Intelligence Research Institute",
+            "email": "nate@intelligence.org"
+        },
+        {
+            "name": "Jessica Taylor",
+            "affiliation": "Machine Intelligence Research Institute",
+            "email": "jessica@intelligence.org"
+        },
+        {
+            "name": "Artit Wangperawong",
+            "affiliation": "True Corporation Public Company Limited, Bangkok 10310, Thailand; Department of Electrical Engineering, Faculty of Engineering, King Mongkut's University of Technology Thonburi, Bangkok 10140, Thailand",
+            "email": "artitw@gmail.com"
+          },
+          {
+            "name": "Cyrille Brun",
+            "affiliation": "International Business Machines Corporation, Singapore 486048",
+            "email": null
+          },
+          {
+            "name": "Dr. Olav Laudy",
+            "affiliation": "International Business Machines Corporation, Singapore 486048",
+            "email": null
+          },
+          {
+            "name": "Rujikorn Pavasuthipaisit",
+            "affiliation": "True Corporation Public Company Limited, Bangkok 10310, Thailand",
+            "email": null
+          },
+          {
+            "name": "Jarek Duda",
+            "affiliation": "Jagiellonian University",
+            "email": "dudajar@gmail.com"
+          },
+          {
+            "name": "Marcin Niemiec",
+            "affiliation": "AGH University of Science and Technology",
+            "email": "niemiec@kt.agh.edu.pl"
+          }
+    ],
+    "authorship": [
+        {
+            "author_name": "Scott Garrabrant",
+            "paper_title": "Asymptotic Convergence in Online Learning with Unbounded Delays",
+            "role": "First author"
+        },
+        {
+            "author_name": "Nate Soares",
+            "paper_title": "Asymptotic Convergence in Online Learning with Unbounded Delays",
+            "role": "Second author"
+        },
+        {
+            "author_name": "Jessica Taylor",
+            "paper_title": "Asymptotic Convergence in Online Learning with Unbounded Delays",
+            "role": "Corresponding author"
+        },
+        {
+            "author_name": "Artit Wangperawong",
+            "paper_title": "Churn analysis using deep convolutional neural networks and autoencoders",
+            "role": "Corresponding author, First Author"
+          },
+          {
+            "author_name": "Cyrille Brun",
+            "paper_title": "Churn analysis using deep convolutional neural networks and autoencoders",
+            "role": "Second author"
+          },
+          {
+            "author_name": "Dr. Olav Laudy",
+            "paper_title": "Churn analysis using deep convolutional neural networks and autoencoders",
+            "role": "Third author"
+          },
+          {
+            "author_name": "Rujikorn Pavasuthipaisit",
+            "paper_title": "Churn analysis using deep convolutional neural networks and autoencoders",
+            "role": "Fourth author"
+          },
+          {
+            "author_name": "Jarek Duda",
+            "paper_title": "Lightweight compression with encryption based on Asymmetric Numeral Systems",
+            "role": "First author"
+          },
+          {
+            "author_name": "Marcin Niemiec",
+            "paper_title": "Lightweight compression with encryption based on Asymmetric Numeral Systems",
+            "role": "Second author"
+          }
+    ],
+    "references": [
+      {
+        "paper_title": "Asymptotic Convergence in Online Learning with Unbounded Delays",
+        "ref_title": "Efficient Optimal Learning for Contextual Bandits",
+        "ref_authors": "Miroslav Dudik et al.",
+        "ref_publication_year": "2011",
+        "ref_venue": "27th Annual Conference on Uncertainty in Artificial Intelligence (UAI-11)"
+      },
+      {
+        "paper_title": "Asymptotic Convergence in Online Learning with Unbounded Delays",
+        "ref_title": "Online Learning Under Delayed Feedback",
+        "ref_authors": "Pooria Joulani, András György, and Csaba Szepesvári",
+        "ref_publication_year": "2013",
+        "ref_venue": "30th International Conference on Machine Learning"
+      },
+      {
+        "paper_title": "Asymptotic Convergence in Online Learning with Unbounded Delays",
+        "ref_title": "Algorithmic Randomness and Complexity",
+        "ref_authors": "Rodney G. Downey and Denis R. Hirschfeldt",
+        "ref_publication_year": "2010",
+        "ref_venue": "Springer"
+      },
+      {
+        "paper_title": "Asymptotic Convergence in Online Learning with Unbounded Delays",
+        "ref_title": "The Weighted Majority Algorithm",
+        "ref_authors": "Nick Littlestone and Manfred K. Warmuth",
+        "ref_publication_year": "1994",
+        "ref_venue": "Information and computation"
+      },
+      {
+        "paper_title": "Asymptotic Convergence in Online Learning with Unbounded Delays",
+        "ref_title": "Aggregating Strategies",
+        "ref_authors": "Volodimir G. Vovk",
+        "ref_publication_year": "1990",
+        "ref_venue": "3rd Annual Workshop on Computational Learning Theory (COLT90)"
+      },
+      {
+        "paper_title": "Asymptotic Convergence in Online Learning with Unbounded Delays",
+        "ref_title": "On Bayes Methods for On-Line Boolean Prediction",
+        "ref_authors": "Nicolò Cesa-Bianchi, David P. Helmbold, and Sandra Panizza",
+        "ref_publication_year": "1998",
+        "ref_venue": "Algorithmica"
+      },
+      {
+        "paper_title": "Asymptotic Convergence in Online Learning with Unbounded Delays",
+        "ref_title": "Tight Worst-Case Loss Bounds for Predicting with Expert Advice",
+        "ref_authors": "David Haussler, Jyrki Kivinen, and Manfred K. Warmuth",
+        "ref_publication_year": "1995",
+        "ref_venue": "Computational Learning Theory: Second European Conference (EuroCOLT '95)"
+      },
+      {
+        "paper_title": "Asymptotic Convergence in Online Learning with Unbounded Delays",
+        "ref_title": "Online Learning with Predictable Sequences",
+        "ref_authors": "Alexander Rakhlin and Karthik Sridharan",
+        "ref_publication_year": "2013",
+        "ref_venue": "26th Conference on Learning Theory (COLT 2013)"
+      },
+      {
+        "paper_title": "Asymptotic Convergence in Online Learning with Unbounded Delays",
+        "ref_title": "Regret minimization for branching experts",
+        "ref_authors": "Eyal Gofer et al.",
+        "ref_publication_year": "2013",
+        "ref_venue": "26th Conference on Learning Theory (COLT 2013)"
+      },
+      {
+        "paper_title": "Asymptotic Convergence in Online Learning with Unbounded Delays",
+        "ref_title": "Discrete Prediction Games with Arbitrary Feedback and Loss",
+        "ref_authors": "Antonio Piccolboni and Christian Schindelhauer",
+        "ref_publication_year": "2001",
+        "ref_venue": "Computational Learning Theory: 14th Annual Conference on Computational Learning Theory (COLT 2001), and 5th European Conference on Computational Learning Theory (EuroCOLT 2001)"
+      },
+      {
+        "paper_title": "Asymptotic Convergence in Online Learning with Unbounded Delays",
+        "ref_title": "On Delayed Prediction of Individual Sequences",
+        "ref_authors": "Marcelo J. Weinberger and Erik Ordentlich",
+        "ref_publication_year": "2002",
+        "ref_venue": "Information Theory, IEEE Transactions on"
+      },
+      {
+        "paper_title": "Asymptotic Convergence in Online Learning with Unbounded Delays",
+        "ref_title": "Finite-Time Analysis of the Multiarmed Bandit Problem",
+        "ref_authors": "Peter Auer, Nicolò Cesa-Bianchi, and Paul Fischer",
+        "ref_publication_year": "2002",
+        "ref_venue": "Machine Learning"
+      },
+      {
+        "paper_title": "Asymptotic Convergence in Online Learning with Unbounded Delays",
+        "ref_title": "Online Markov Decision Processes Under Bandit Feedback",
+        "ref_authors": "Gergely Neu et al.",
+        "ref_publication_year": "2010",
+        "ref_venue": "Advances in Neural Information Processing Systems 23 (NIPS 2010)"
+      },
+      {
+        "paper_title": "Asymptotic Convergence in Online Learning with Unbounded Delays",
+        "ref_title": "Online Learning with Delayed Label Feedback",
+        "ref_authors": "Jon Christian Mesterharm",
+        "ref_publication_year": "2005",
+        "ref_venue": "Algorithmic Learning Theory: 16th International Conference (ALT 2005)"
+      },
+      {
+        "paper_title": "Asymptotic Convergence in Online Learning with Unbounded Delays",
+        "ref_title": "Improving Online Learning",
+        "ref_authors": "Jon Christian Mesterharm",
+        "ref_publication_year": "2007",
+        "ref_venue": null
+      },
+      {
+        "paper_title": "Asymptotic Convergence in Online Learning with Unbounded Delays",
+        "ref_title": "Parallelizing Exploration-Exploitation Tradeoffs in Gaussian Process Bandit Optimization",
+        "ref_authors": "Thomas Desautels, Andreas Krause, and Joel W. Burdick",
+        "ref_publication_year": "2014",
+        "ref_venue": "Journal of Machine Learning Research"
+      },
+      {
+        "paper_title": "Asymptotic Convergence in Online Learning with Unbounded Delays",
+        "ref_title": "Online Learning with Adversarial Delays",
+        "ref_authors": "Kent Quanrud and Daniel Khashabi",
+        "ref_publication_year": "2015",
+        "ref_venue": "Advances in Neural Information Processing Systems 28 (NIPS 2015)"
+      },
+      {
+        "paper_title": "Asymptotic Convergence in Online Learning with Unbounded Delays",
+        "ref_title": "Using Predictive Prefetching to Improve World Wide Web Latency",
+        "ref_authors": "Venkata N. Padmanabhan and Jeffrey C. Mogul",
+        "ref_publication_year": "1996",
+        "ref_venue": "ACM SIGCOMM Computer Communication Review"
+      },
+      {
+        "paper_title": "Asymptotic Convergence in Online Learning with Unbounded Delays",
+        "ref_title": "Slow Learners are Fast",
+        "ref_authors": "Martin Zinkevich, John Langford, and Alex J. Smola",
+        "ref_publication_year": "2009",
+        "ref_venue": "Advances in Neural Information Processing Systems 22 (NIPS 2009)"
+      },
+      {
+        "paper_title": "Asymptotic Convergence in Online Learning with Unbounded Delays",
+        "ref_title": "Distributed Delayed Stochastic Optimization",
+        "ref_authors": "Alekh Agarwal and John C. Duchi",
+        "ref_publication_year": "2011",
+        "ref_venue": "Advances in Neural Information Processing Systems 24 (NIPS 2011)"
+      },
+      {
+        "paper_title": "Asymptotic Convergence in Online Learning with Unbounded Delays",
+        "ref_title": "Probabilities on Sentences in an Expressive Logic",
+        "ref_authors": "Marcus Hutter et al.",
+        "ref_publication_year": "2013",
+        "ref_venue": "Journal of Applied Logic"
+      },
+      {
+        "paper_title": "Asymptotic Convergence in Online Learning with Unbounded Delays",
+        "ref_title": "Logical Prior Probability",
+        "ref_authors": "Abram Demski",
+        "ref_publication_year": "2012",
+        "ref_venue": "Artificial General Intelligence. 5th International Conference, AGI 2012"
+      },
+      {
+        "paper_title": "Asymptotic Convergence in Online Learning with Unbounded Delays",
+        "ref_title": "Concerning Measures in First Order Calculi",
+        "ref_authors": "Haim Gaifman",
+        "ref_publication_year": "1964",
+        "ref_venue": "Israel Journal of Mathematics"
+      },
+      {
+        "paper_title": "Asymptotic Convergence in Online Learning with Unbounded Delays",
+        "ref_title": "The Definition of Random Sequences",
+        "ref_authors": "Per Martin-Löf",
+        "ref_publication_year": "1966",
+        "ref_venue": "Information and Control"
+      },
+      {
+        "paper_title": "Asymptotic Convergence in Online Learning with Unbounded Delays",
+        "ref_title": "Probability for Statistics and Machine Learning: Fundamentals and Advanced Topics",
+        "ref_authors": "Anirban DasGupta",
+        "ref_publication_year": "2011",
+        "ref_venue": "Springer Texts in Statistics"
+      },
+      {
+        "paper_title": "Churn analysis using deep convolutional neural networks and autoencoders",
+        "ref_title": "Imagenet classification with deep convolutional neural networks",
+        "ref_authors": "Alex Krizhevsky, Ilya Sutskever, Geoffrey E. Hinton",
+        "ref_publication_year": "2012",
+        "ref_venue": "Advances in neural information processing systems"
+      },
+      {
+        "paper_title": "Churn analysis using deep convolutional neural networks and autoencoders",
+        "ref_title": "Going deeper with convolutions",
+        "ref_authors": "Christian Szegedy, Wei Liu, Yangqing Jia, Pierre Sermanet, Scott Reed, Dragomir Anguelov, Dumitru Erhan, Vincent Vanhoucke, Andrew Rabinovich",
+        "ref_publication_year": "2015",
+        "ref_venue": "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition"
+      },
+      {
+        "paper_title": "Churn analysis using deep convolutional neural networks and autoencoders",
+        "ref_title": "Imagenet large scale visual recognition challenge",
+        "ref_authors": "Olga Russakovsky, Jia Deng, Hao Su, Jonathan Krause, Sanjeev Satheesh, Sean Ma, Zhiheng Huang et al.",
+        "ref_publication_year": "2015",
+        "ref_venue": "International Journal of Computer Vision"
+      },
+      {
+        "paper_title": "Churn analysis using deep convolutional neural networks and autoencoders",
+        "ref_title": "Evaluation of pooling operations in convolutional architectures for object recognition",
+        "ref_authors": "Dominik Scherer, Andreas Müller, Sven Behnke",
+        "ref_publication_year": "2010",
+        "ref_venue": "Artificial Neural Networks-ICANN 2010"
+      },
+      {
+        "paper_title": "Churn analysis using deep convolutional neural networks and autoencoders",
+        "ref_title": "The meaning and use of the area under a receiver operating characteristic (ROC) curve",
+        "ref_authors": "James A. Hanley, Barbara J. McNeil",
+        "ref_publication_year": "1982",
+        "ref_venue": "Radiology"
+      },
+      {
+        "paper_title": "Churn analysis using deep convolutional neural networks and autoencoders",
+        "ref_title": "The use of the area under the ROC curve in the evaluation of machine learning algorithms",
+        "ref_authors": "Andrew P. Bradley",
+        "ref_publication_year": "1997",
+        "ref_venue": "Pattern recognition"
+      },
+      {
+        "paper_title": "Churn analysis using deep convolutional neural networks and autoencoders",
+        "ref_title": "Loss functions for binary class probability estimation and classification: Structure and applications",
+        "ref_authors": "Andreas Buja, Werner Stuetzle, Yi Shen",
+        "ref_publication_year": "2005",
+        "ref_venue": "Working draft"
+      },
+      {
+        "paper_title": "Churn analysis using deep convolutional neural networks and autoencoders",
+        "ref_title": "Learning representations by backpropagating errors",
+        "ref_authors": "David E. Rumelhart, Geoffrey E. Hinton, Ronald J. Williams",
+        "ref_publication_year": null,
+        "ref_venue": "Cognitive modeling"
+      },
+      {
+        "paper_title": "Churn analysis using deep convolutional neural networks and autoencoders",
+        "ref_title": "ADADELTA: an adaptive learning rate method",
+        "ref_authors": "Matthew D. Zeiler",
+        "ref_publication_year": "2012",
+        "ref_venue": "arXiv preprint arXiv:1212.5701"
+      },
+      {
+        "paper_title": "Churn analysis using deep convolutional neural networks and autoencoders",
+        "ref_title": "Improving neural networks by preventing co-adaptation of feature detectors",
+        "ref_authors": "Geoffrey E. Hinton, Nitish Srivastava, Alex Krizhevsky, Ilya Sutskever, Ruslan R. Salakhutdinov",
+        "ref_publication_year": "2012",
+        "ref_venue": "arXiv preprint arXiv:1207.0580"
+      },
+      {
+        "paper_title": "Churn analysis using deep convolutional neural networks and autoencoders",
+        "ref_title": "Reducing the dimensionality of data with neural networks",
+        "ref_authors": "Geoffrey E. Hinton, Ruslan R. Salakhutdinov",
+        "ref_publication_year": "2006",
+        "ref_venue": "Science"
+      },
+      {
+        "paper_title": "Churn analysis using deep convolutional neural networks and autoencoders",
+        "ref_title": "Visualizing a Trained Autoencoder",
+        "ref_authors": null,
+        "ref_publication_year": "2013",
+        "ref_venue": "UFLDL Tutorial"
+      },
+      {
+        "paper_title": "Churn analysis using deep convolutional neural networks and autoencoders",
+        "ref_title": "Stacked convolutional autoencoders for hierarchical feature extraction",
+        "ref_authors": "Jonathan Masci, Ueli Meier, Dan Cireşan, Jürgen Schmidhuber",
+        "ref_publication_year": "2011",
+        "ref_venue": "Artificial Neural Networks and Machine Learning-ICANN 2011"
+      },
+      {
+        "paper_title": "Churn analysis using deep convolutional neural networks and autoencoders",
+        "ref_title": "Theano: a CPU and GPU math expression compiler",
+        "ref_authors": "James Bergstra, Olivier Breuleux, Frédéric Bastien, Pascal Lamblin, Razvan Pascanu, Guillaume Desjardins, Joseph Turian, David Warde-Farley, Yoshua Bengio",
+        "ref_publication_year": "2010",
+        "ref_venue": "Proceedings of the Python for scientific computing conference (SciPy)"
+      },
+      {
+        "paper_title": "Churn analysis using deep convolutional neural networks and autoencoders",
+        "ref_title": "Theano: new features and speed improvements",
+        "ref_authors": "Frédéric Bastien, Pascal Lamblin, Razvan Pascanu, James Bergstra, Ian Goodfellow, Arnaud Bergeron, Nicolas Bouchard, David Warde-Farley, Yoshua Bengio",
+        "ref_publication_year": "2012",
+        "ref_venue": "arXiv preprint arXiv:1211.5590"
+      },
+      {
+        "paper_title": "Churn analysis using deep convolutional neural networks and autoencoders",
+        "ref_title": "TensorFlow: Large-scale machine learning on heterogeneous systems",
+        "ref_authors": "M. Abadi et al.",
+        "ref_publication_year": "2015",
+        "ref_venue": "Software available from tensorflow.org"
+      },
+      {
+        "paper_title": "Churn analysis using deep convolutional neural networks and autoencoders",
+        "ref_title": "Keras",
+        "ref_authors": "François Chollet",
+        "ref_publication_year": "2016",
+        "ref_venue": "GitHub"
+      },
+      {
+        "paper_title": "Lightweight compression with encryption based on Asymmetric Numeral Systems",
+        "ref_title": "A method for the construction of minimum redundancy codes",
+        "ref_authors": "D. Huffman",
+        "ref_publication_year": "1952",
+        "ref_venue": "Proceedings of the IRE"
+      },
+      {
+        "paper_title": "Lightweight compression with encryption based on Asymmetric Numeral Systems",
+        "ref_title": "Generalized kraft inequality and arithmetic coding",
+        "ref_authors": "J. J. Rissanen",
+        "ref_publication_year": "1976",
+        "ref_venue": "IBM Journal of research and development"
+      },
+      {
+        "paper_title": "Lightweight compression with encryption based on Asymmetric Numeral Systems",
+        "ref_title": "Range encoding: an algorithm for removing redundancy from a digitized message",
+        "ref_authors": "G. Martin",
+        "ref_publication_year": "1979",
+        "ref_venue": "Proceedings of Institution of Electronic and Radio Engineers International Conference on Video and Data Recording Conference"
+      },
+      {
+        "paper_title": "Lightweight compression with encryption based on Asymmetric Numeral Systems",
+        "ref_title": "Context-based adaptive binary arithmetic coding in the H.264/AVC video compression standard",
+        "ref_authors": "D. Marpe, H. Schwarz, T. Wiegand",
+        "ref_publication_year": "2003",
+        "ref_venue": "IEEE Transactions on Circuits and Systems for Video Technology"
+      },
+      {
+        "paper_title": "Lightweight compression with encryption based on Asymmetric Numeral Systems",
+        "ref_title": "Data Compression Programs website",
+        "ref_authors": "M. Mahoney",
+        "ref_publication_year": null,
+        "ref_venue": null
+      },
+      {
+        "paper_title": "Lightweight compression with encryption based on Asymmetric Numeral Systems",
+        "ref_title": "Asymmetric numerical systems",
+        "ref_authors": "J. Duda",
+        "ref_publication_year": null,
+        "ref_venue": null
+      },
+      {
+        "paper_title": "Lightweight compression with encryption based on Asymmetric Numeral Systems",
+        "ref_title": "Asymmetric numeral systems: entropy coding combining speed of huffman coding with compression rate of arithmetic coding",
+        "ref_authors": "J. Duda",
+        "ref_publication_year": null,
+        "ref_venue": null
+      },
+      {
+        "paper_title": "Lightweight compression with encryption based on Asymmetric Numeral Systems",
+        "ref_title": "The use of asymmetric numeral systems as an accurate replacement for huffman coding",
+        "ref_authors": "J. Duda, K. Tahboub, N. J. Gadgil, E. J. Delp",
+        "ref_publication_year": null,
+        "ref_venue": "31st Picture Coding Symposium"
+      },
+      {
+        "paper_title": "Lightweight compression with encryption based on Asymmetric Numeral Systems",
+        "ref_title": "Zhuff compressor",
+        "ref_authors": "Y. Collet",
+        "ref_publication_year": null,
+        "ref_venue": null
+      },
+      {
+        "paper_title": "Lightweight compression with encryption based on Asymmetric Numeral Systems",
+        "ref_title": "lzturbo compressor",
+        "ref_authors": "H. Buzidi",
+        "ref_publication_year": null,
+        "ref_venue": null
+      },
+      {
+        "paper_title": "Lightweight compression with encryption based on Asymmetric Numeral Systems",
+        "ref_title": "Lza compressor",
+        "ref_authors": "N. Francesco",
+        "ref_publication_year": null,
+        "ref_venue": null
+      },
+      {
+        "paper_title": "Lightweight compression with encryption based on Asymmetric Numeral Systems",
+        "ref_title": "Apple lzfse compressor",
+        "ref_authors": null,
+        "ref_publication_year": null,
+        "ref_venue": null
+      },
+      {
+        "paper_title": "Lightweight compression with encryption based on Asymmetric Numeral Systems",
+        "ref_title": "Facebook zstandard compressor",
+        "ref_authors": null,
+        "ref_publication_year": null,
+        "ref_venue": null
+      },
+      {
+        "paper_title": "Lightweight compression with encryption based on Asymmetric Numeral Systems",
+        "ref_title": "High throughput hardware architectures for asymmetric numeral systems entropy coding",
+        "ref_authors": "S. M. Najmabadi, Z. Wang, Y. Baroud, S. Simon",
+        "ref_publication_year": "2015",
+        "ref_venue": "2015 9th International Symposium on Image and Signal Processing and Analysis (ISPA)"
+      },
+      {
+        "paper_title": "Lightweight compression with encryption based on Asymmetric Numeral Systems",
+        "ref_title": "A survey of lightweight-cryptography implementations",
+        "ref_authors": "T. Eisenbarth, S. Kumar, C. Paar, A. Poschmann, L. Uhsadel",
+        "ref_publication_year": "2007",
+        "ref_venue": "IEEE Design & Test of Computers"
+      },
+      {
+        "paper_title": "Lightweight compression with encryption based on Asymmetric Numeral Systems",
+        "ref_title": "Lightweight cryptography: cryptographic engineering for a pervasive world",
+        "ref_authors": "A. Y. Poschmann",
+        "ref_publication_year": "2009",
+        "ref_venue": "Ph. D. Thesis"
+      },
+      {
+        "paper_title": "Lightweight compression with encryption based on Asymmetric Numeral Systems",
+        "ref_title": "Networked rfid systems and lightweight cryptography",
+        "ref_authors": "P. H. Cole, D. C. Ranasinghe",
+        "ref_publication_year": "2008",
+        "ref_venue": "London, UK: Springer"
+      },
+      {
+        "paper_title": "Lightweight compression with encryption based on Asymmetric Numeral Systems",
+        "ref_title": "Secure lempel-ziv compression with embedded encryption",
+        "ref_authors": "D. Xie, C.-C. Kuo",
+        "ref_publication_year": "2005",
+        "ref_venue": "Electronic Imaging 2005"
+      },
+      {
+        "paper_title": "Lightweight compression with encryption based on Asymmetric Numeral Systems",
+        "ref_title": "Secure compression: Theory & practice",
+        "ref_authors": "J. Kelley, R. Tamassia",
+        "ref_publication_year": "2014",
+        "ref_venue": "Cryptology ePrint Archive"
+      },
+      {
+        "paper_title": "Lightweight compression with encryption based on Asymmetric Numeral Systems",
+        "ref_title": "On scrambling the burrows-wheeler transform to provide privacy in lossless compression",
+        "ref_authors": "M. O. Külekci",
+        "ref_publication_year": "2012",
+        "ref_venue": "Computers & Security"
+      },
+      {
+        "paper_title": "Lightweight compression with encryption based on Asymmetric Numeral Systems",
+        "ref_title": "On the privacy afforded by adaptive text compression",
+        "ref_authors": "I. H. Witten, J. G. Cleary",
+        "ref_publication_year": "1988",
+        "ref_venue": "Computers & Security"
+      },
+      {
+        "paper_title": "Lightweight compression with encryption based on Asymmetric Numeral Systems",
+        "ref_title": "Secure arithmetic coding",
+        "ref_authors": "H. Kim, J. Wen, J. D. Villasenor",
+        "ref_publication_year": "2007",
+        "ref_venue": "IEEE Transactions on Signal Processing"
+      },
+      {
+        "paper_title": "Lightweight compression with encryption based on Asymmetric Numeral Systems",
+        "ref_title": "Enhanced huffman coding with encryption for wireless data broadcasting system",
+        "ref_authors": "K.-K. Tseng, J. M. Jiang, J.-S. Pan, L. L. Tang, C.-Y. Hsu, C.-C. Chen",
+        "ref_publication_year": "2012",
+        "ref_venue": "Computer, Consumer and Control (IS3C) International Symposium"
+      },
+      {
+        "paper_title": "Lightweight compression with encryption based on Asymmetric Numeral Systems",
+        "ref_title": "On breaking a huffman code",
+        "ref_authors": "D. W. Gillman, M. Mohtashemi, R. L. Rivest",
+        "ref_publication_year": "1996",
+        "ref_venue": "IEEE Transactions on Information theory"
+      },
+      {
+        "paper_title": "Lightweight compression with encryption based on Asymmetric Numeral Systems",
+        "ref_title": "Cryptography with chaos",
+        "ref_authors": "M. Baptista",
+        "ref_publication_year": "1998",
+        "ref_venue": "Physics Letters A"
+      },
+      {
+        "paper_title": "Lightweight compression with encryption based on Asymmetric Numeral Systems",
+        "ref_title": "Chaos and cryptography: block encryption ciphers based on chaotic maps",
+        "ref_authors": "G. Jakimoski, L. Kocarev",
+        "ref_publication_year": "2001",
+        "ref_venue": "IEEE Transactions on Circuits and Systems I: Fundamental Theory and Applications"
+      },
+      {
+        "paper_title": "Lightweight compression with encryption based on Asymmetric Numeral Systems",
+        "ref_title": "ryg_rans",
+        "ref_authors": "F. Giesen",
+        "ref_publication_year": null,
+        "ref_venue": null
+      },
+      {
+        "paper_title": "Lightweight compression with encryption based on Asymmetric Numeral Systems",
+        "ref_title": "AsymmetricNumeralSystemsToolkit",
+        "ref_authors": "J. Duda",
+        "ref_publication_year": null,
+        "ref_venue": null
+      },
+      {
+        "paper_title": "Lightweight compression with encryption based on Asymmetric Numeral Systems",
+        "ref_title": "FiniteStateEntropy",
+        "ref_authors": "Y. Collet",
+        "ref_publication_year": null,
+        "ref_venue": null
+      }
+    ]
+}

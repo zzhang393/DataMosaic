@@ -1,0 +1,155 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "generator": "Finance Database Designer",
+    "generated_at": "2025-09-26T00:00:00Z",
+    "tables_count": 6,
+    "relations_count": 5
+  },
+  "tables": [
+    {
+      "id": "table_1",
+      "name": "公司",
+      "type": "entity",
+      "fields": [
+        { "name": "公司名称", "type": "VARCHAR(255)", "constraints": { "primary_key": true }, "description": "公司法定全称，作为唯一标识。例如：'江苏洋河酒厂股份有限公司'" },
+        { "name": "证券代码", "type": "VARCHAR(20)", "description": "公司在证券交易所的唯一交易代码。例如：'002304'" },
+        { "name": "证券简称", "type": "VARCHAR(50)", "description": "公司在证券市场中常用的简称，便于投资者识别。例如：'洋河股份'" }
+      ]
+    },
+    {
+      "id": "table_2",
+      "name": "报告",
+      "type": "entity",
+      "fields": [
+        { "name": "报告名称", "type": "VARCHAR(255)", "constraints": { "primary_key": true }, "description": "报告唯一标识，由年份、公司简称和季度组成。例如：'2024-洋河股份-Q1'" },
+        { "name": "公司名称", "type": "VARCHAR(255)", "constraints": { "foreign_key": true }, "description": "报告所属的公司，全称，与公司表关联" },
+        { "name": "报告日期", "type": "INT", "description": "会计年度或季度结束时间，通常用年份表示。例如：2024" },
+        { "name": "是否审计", "type": "BOOLEAN", "description": "标识报告是否经过会计事务所审计。true=已审计，false=未经审计" }
+      ]
+    },
+    {
+      "id": "table_3",
+      "name": "公司_报告",
+      "type": "entity",
+      "fields": [
+        {
+          "name": "公司名称",
+          "type": "VARCHAR(255)",
+          "constraints": { "foreign_key": true, "nullable": false },
+          "description": "关联到公司表的公司名称（公司.公司名称），表示该报告所属公司"
+        },
+        {
+          "name": "报告名称",
+          "type": "VARCHAR(255)",
+          "constraints": { "foreign_key": true, "nullable": false },
+          "description": "关联到报告表的报告名称（报告.报告名称），标识该公司发布的具体报告"
+        }
+      ]
+    },    
+    {
+      "id": "table_4",
+      "name": "资产负债表",
+      "type": "entity",
+      "fields": [
+        { "name": "报告名称", "type": "VARCHAR(255)", "constraints": { "foreign_key": true }, "description": "对应的财务报告名称，与报告表关联" },
+        { "name": "流动资产合计", "type": "DECIMAL(20,2)", "description": "流动资产总额，包括货币资金、应收账款、存货等。例如：125000000.0000" },
+        { "name": "非流动资产合计", "type": "DECIMAL(20,2)", "description": "非流动资产总额，包括长期投资、固定资产、无形资产等" },
+        { "name": "流动负债合计", "type": "DECIMAL(20,2)", "description": "流动负债总额，包括应付账款、短期借款等" },
+        { "name": "非流动负债合计", "type": "DECIMAL(20,2)", "description": "非流动负债总额，包括长期借款、应付债券等" }
+      ]
+    },
+    {
+      "id": "table_5",
+      "name": "现金流量表",
+      "type": "entity",
+      "fields": [
+        { "name": "报告名称", "type": "VARCHAR(255)", "constraints": { "foreign_key": true }, "description": "对应的财务报告名称，与报告表关联" },
+        { "name": "经营活动现金流入", "type": "DECIMAL(20,2)", "description": "企业日常经营活动产生的现金流入，如销售商品和服务收到的现金" },
+        { "name": "经营活动现金流出", "type": "DECIMAL(20,2)", "description": "企业日常经营活动产生的现金流出，如支付给供应商和职工的现金" },
+        { "name": "投资活动现金流入", "type": "DECIMAL(20,2)", "description": "投资活动产生的现金流入，如出售固定资产、收回投资款" },
+        { "name": "投资活动现金流出", "type": "DECIMAL(20,2)", "description": "投资活动产生的现金流出，如购建固定资产、长期股权投资支出" },
+        { "name": "筹资活动现金流入", "type": "DECIMAL(20,2)", "description": "筹资活动产生的现金流入，如发行股票、债券所获得的现金" },
+        { "name": "筹资活动现金流出", "type": "DECIMAL(20,2)", "description": "筹资活动产生的现金流出，如偿还债务本金、支付股利" }
+      ]
+    },
+    {
+      "id": "table_6",
+      "name": "公司人员情况",
+      "type": "entity",
+      "fields": [
+        { "name": "公司名称", "type": "VARCHAR(255)", "constraints": { "foreign_key": true }, "description": "对应公司全称，与公司表关联" },
+        { "name": "姓名", "type": "VARCHAR(255)", "description": "股东或管理层人员姓名。例如：'张三'" },
+        { "name": "职位", "type": "VARCHAR(100)", "description": "人员在公司担任的主要职务。例如：'Chief Executive Officer'，'Chief Financial Officer'" }
+      ]
+    }
+  ],
+  "relations": [
+      { "id": "ref_1", "type": "one-to-many", "from": { "table": "公司", "field": "公司名称" }, "to": { "table": "公司_报告", "field": "公司名称" }},
+      { "id": "ref_2", "type": "one-to-many", "from": { "table": "报告", "field": "报告名称" }, "to": { "table": "公司_报告", "field": "报告名称" }},
+      { "id": "ref_3", "type": "many-to-one", "from": { "table": "资产负债表", "field": "报告名称" }, "to": { "table": "报告", "field": "报告名称" } },
+      { "id": "ref_4", "type": "many-to-one", "from": { "table": "现金流量表", "field": "报告名称" }, "to": { "table": "报告", "field": "报告名称" } },
+      { "id": "ref_5", "type": "many-to-one", "from": { "table": "公司人员情况", "field": "公司名称" }, "to": { "table": "公司", "field": "公司名称" } }
+  ],
+  "rules": [
+    {
+      "id": "phi_1",
+      "name": "no_mutual_investment",
+      "description": "禁止相互投资：¬(Hold(a,b) ∧ Hold(b,a))。两个公司不能同时持有对方的股份。",
+      "type": "LOGIC",
+      "severity": "ERROR",
+      "scope": "multi_table",
+      "tables": ["公司_报告"],
+      "enabled": true,
+      "validation_logic": {
+        "constraint": "对于任意两个公司A和B，如果A持有B的股份，则B不能持有A的股份",
+        "check_method": "cross_reference",
+        "fields": ["公司名称", "报告名称"]
+      },
+      "fix_strategy": {
+        "method": "llm_decision",
+        "description": "使用LLM根据报告日期、投资金额和上下文判断哪个投资关系更可信"
+      }
+    },
+    {
+      "id": "phi_2",
+      "name": "cash_sanity_bound",
+      "description": "现金合理性边界：期末现金/期初现金 < 10。期末现金与期初现金的比率应合理。",
+      "type": "VALUE",
+      "severity": "WARN",
+      "scope": "single_table",
+      "tables": ["现金流量表"],
+      "enabled": true,
+      "validation_logic": {
+        "constraint": "对于每个现金流量表，期末现金与期初现金的比率应小于10",
+        "check_method": "formula",
+        "formula": "期末现金余额 / 期初现金余额 < 10",
+        "fields": ["期末现金余额", "期初现金余额"]
+      },
+      "fix_strategy": {
+        "method": "verify_source",
+        "description": "重新检查源文档验证现金值，因为大比率可能表示提取错误"
+      }
+    },
+    {
+      "id": "phi_3",
+      "name": "recursive_investment",
+      "description": "递归投资（传递闭包）：Hold(a,b) ∧ Hold(b,c) ⇒ Hold(a,c)。如果公司A投资B，B投资C，则A间接投资C。",
+      "type": "LOGIC",
+      "severity": "WARN",
+      "scope": "multi_table",
+      "tables": ["公司_报告"],
+      "enabled": true,
+      "validation_logic": {
+        "constraint": "投资关系应满足传递闭包性质",
+        "check_method": "graph_analysis",
+        "fields": ["公司名称", "报告名称"]
+      },
+      "fix_strategy": {
+        "method": "infer_missing",
+        "description": "基于传递闭包推断并建议添加缺失的间接投资关系"
+      }
+    }
+  ]
+
+}

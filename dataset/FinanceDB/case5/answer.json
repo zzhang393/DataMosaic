@@ -1,0 +1,45 @@
+{"company": [
+  { "CompanyId":"C001", "CompanyName": "Nebula Dynamics Incorporated", "StockCode": "003001", "StockName": "Nebula Dynamics" },
+  { "CompanyId":"C002", "CompanyName": "GreenLeaf Energy Systems Corp.", "StockCode": "003002", "StockName": "GreenLeaf" },
+  { "CompanyId":"C003", "CompanyName": "Quantum Horizon Technologies Ltd.", "StockCode": "003003", "StockName": "Quantum Horizon" },
+  { "CompanyId":"C004", "CompanyName": "SilverLine Logistics Group", "StockCode": "003004", "StockName": "SilverLine" },
+  { "CompanyId":"C005", "CompanyName": "OceanBlue Pharmaceuticals", "StockCode": "003005", "StockName": "OceanBlue" },
+  { "CompanyId":"C006", "CompanyName": "Apex Robotics Systems", "StockCode": "003006", "StockName": "Apex Robotics" },
+  { "CompanyId":"C007", "CompanyName": "Zenith Financial Holdings", "StockCode": "003007", "StockName": "Zenith Fin" },
+  { "CompanyId":"C008", "CompanyName": "Stellar Aerospace Technologies", "StockCode": "003008", "StockName": "Stellar Aero" },
+  { "CompanyId":"C009", "CompanyName": "PureFlow Water Solutions", "StockCode": "003009", "StockName": "PureFlow" },
+  { "CompanyId":"C010", "CompanyName": "IronClad Construction Co.", "StockCode": "003010", "StockName": "IronClad" },
+  { "CompanyId":"C011", "CompanyName": "NovaGen Genetics Inc.", "StockCode": "003011", "StockName": "NovaGen" },
+  { "CompanyId":"C012", "CompanyName": "UrbanPulse Media Group", "StockCode": "003012", "StockName": "UrbanPulse" },
+  { "CompanyId":"C013", "CompanyName": "SwiftStream Logistics", "StockCode": "003013", "StockName": "SwiftStream" },
+  { "CompanyId":"C014", "CompanyName": "SolarVantage Power Corp.", "StockCode": "003014", "StockName": "SolarVantage" },
+  { "CompanyId":"C015", "CompanyName": "DeepEarth Mining Resources", "StockCode": "003015", "StockName": "DeepEarth" },
+  { "CompanyId":"C016", "CompanyName": "Velocity Automotive Labs", "StockCode": "003016", "StockName": "Velocity Auto" },
+  { "CompanyId":"C017", "CompanyName": "EchoValley Agriculture Ltd.", "StockCode": "003017", "StockName": "EchoValley" },
+  { "CompanyId":"C018", "CompanyName": "Prism Optical Networks", "StockCode": "003018", "StockName": "Prism Optical" },
+  { "CompanyId":"C019", "CompanyName": "CyberShield Security Inc.", "StockCode": "003019", "StockName": "CyberShield" },
+  { "CompanyId":"C020", "CompanyName": "Harmony Health Services", "StockCode": "003020", "StockName": "Harmony Health" }
+],
+
+  "holding": [
+    { "InvestorId": "C001", "InvesteeId": "C003" },
+    { "InvestorId": "C003", "InvesteeId": "C006" },
+    { "InvestorId": "C006", "InvesteeId": "C018" },
+    { "InvestorId": "C001", "InvesteeId": "C009" },
+  
+    { "InvestorId": "C007", "InvesteeId": "C002" },
+    { "InvestorId": "C007", "InvesteeId": "C010" },
+    { "InvestorId": "C010", "InvesteeId": "C015" },
+    { "InvestorId": "C015", "InvesteeId": "C014" },
+
+    { "InvestorId": "C004", "InvesteeId": "C013" },
+    { "InvestorId": "C012", "InvesteeId": "C013" },
+    { "InvestorId": "C013", "InvesteeId": "C016" },
+    { "InvestorId": "C005", "InvesteeId": "C011" },
+    { "InvestorId": "C011", "InvesteeId": "C020" },
+   
+    { "InvestorId": "C019", "InvesteeId": "C008" },
+    { "InvestorId": "C008", "InvesteeId": "C017" },
+    { "InvestorId": "C008", "InvesteeId": "C007" }
+  ]
+}

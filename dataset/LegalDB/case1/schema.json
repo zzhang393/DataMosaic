@@ -1,0 +1,80 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "generator": "Legal Database Designer",
+    "generated_at": "2025-09-26T00:00:00Z",
+    "tables_count": 6,
+    "relations_count": 5
+  },
+  "tables": [
+      {
+        "id": "table_1",
+        "name": "court",
+        "type": "entity",
+        "fields": [
+          { "name": "name", "type": "VARCHAR(255)", "constraints": { "primary_key": true, "nullable": false }, "description": "法院名称，例如：辽宁省高级人民法院" },
+          { "name": "location", "type": "VARCHAR(255)", "constraints": { "nullable": true }, "description": "法院所在地，例如：辽宁省沈阳市" }
+        ]
+      },
+      {
+        "id": "table_2",
+        "name": "case",
+        "type": "entity",
+        "fields": [
+          { "name": "title", "type": "VARCHAR(500)", "constraints": { "primary_key": true, "nullable": false }, "description": "案件名称，例如：李某某诉沈阳新入监犯监狱国家赔偿案" },
+          { "name": "date", "type": "DATE", "constraints": { "nullable": true }, "description": "案件发生或判决日期" },
+          { "name": "court_name", "type": "VARCHAR(255)", "constraints": { "foreign_key": true, "nullable": false }, "description": "关联法院名称，对应 court.name" },
+          { "name": "result", "type": "TEXT", "constraints": { "nullable": true }, "description": "判决结果或结论" }
+        ]
+      },
+      {
+        "id": "table_3",
+        "name": "person",
+        "type": "entity",
+        "fields": [
+          { "name": "name", "type": "VARCHAR(255)", "constraints": { "primary_key": true, "nullable": false }, "description": "人员姓名，例如：李某某、宋某香" },
+          { "name": "role", "type": "VARCHAR(100)", "constraints": { "nullable": false }, "description": "案件角色，例如：申诉人、被申诉人、法定代表人、代理人" },
+          { "name": "affiliation", "type": "VARCHAR(255)", "constraints": { "nullable": true }, "description": "所属机构，例如：辽宁省沈阳新入监犯监狱、律师事务所" }
+        ]
+      },
+      {
+        "id": "table_4",
+        "name": "caseparty",
+        "type": "entity",
+        "fields": [
+          { "name": "case_title", "type": "VARCHAR(500)", "constraints": { "foreign_key": true, "nullable": false }, "description": "关联案件标题，对应 case.title" },
+          { "name": "person_name", "type": "VARCHAR(255)", "constraints": { "foreign_key": true, "nullable": false }, "description": "关联人员姓名，对应 person.name" },
+          { "name": "role", "type": "VARCHAR(100)", "constraints": { "nullable": false }, "description": "该人在案件中的角色，例如：申诉人、被申诉人、法定代表人、代理人" }
+        ]
+      },
+      {
+        "id": "table_5",
+        "name": "legal_reference",
+        "type": "entity",
+        "fields": [
+          {   "name": "law_name", "type": "VARCHAR(500)", "constraints": { "primary_key": true, "nullable": false }, "description": "法律条款的完整名称，例如：中华人民共和国国家赔偿法第十七条第四项、最高人民检察院《人民检察院监狱检察办法》第三十六条第七项规定" },
+          { "name": "provision", "type": "TEXT",  "constraints": { "nullable": true },  "description": "条款的具体内容，例如：刑讯逼供或者以殴打、虐待等行为造成公民伤害或者死亡的，应当承担国家赔偿责任"  },
+          {  "name": "case_title", "type": "VARCHAR(500)", "constraints": { "foreign_key": true, "nullable": false }, "description": "引用该法律条款的案件，对应 case.title" }
+        ]
+      },
+      {
+        "id": "table_6",
+        "name": "evidence",
+        "type": "entity",
+        "fields": [
+          { "name": "name", "type": "VARCHAR(255)", "constraints": { "primary_key": true, "nullable": false }, "description": "证据名称，例如：吉林大学司法鉴定中心法医临床鉴定司法鉴定意见书" },
+          { "name": "case_title", "type": "VARCHAR(500)", "constraints": { "foreign_key": true, "nullable": false }, "description": "关联案件标题，对应 case.title" },
+          { "name": "provider", "type": "VARCHAR(255)", "constraints": { "nullable": true }, "description": "提供方，例如：中国医科大学法医司法鉴定中心" },
+          { "name": "conclusion", "type": "TEXT", "constraints": { "nullable": true }, "description": "证据结论或意见" }
+        ]
+      }
+  ],
+  "relations": [
+    { "id": "ref_1", "type": "many-to-one", "from": { "table": "case", "field": "court_name" }, "to": { "table": "court", "field": "name" } },
+    { "id": "ref_2", "type": "many-to-one", "from": { "table": "caseparty", "field": "case_title" }, "to": { "table": "case", "field": "title" } },
+    { "id": "ref_3", "type": "many-to-one", "from": { "table": "caseparty", "field": "person_name" }, "to": { "table": "person", "field": "name" } },
+    { "id": "ref_4", "type": "many-to-one", "from": { "table": "legal_reference", "field": "case_title" }, "to": { "table": "case", "field": "title" } },
+    { "id": "ref_5", "type": "many-to-one", "from": { "table": "evidence", "field": "case_title" }, "to": { "table": "case", "field": "title" } }
+  ]
+
+}

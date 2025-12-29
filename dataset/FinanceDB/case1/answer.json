@@ -1,0 +1,57 @@
+{
+  "company": [
+    { "CompanyName": "THE ARENA GROUP HOLDINGS, INC.", "TelephoneNumber": "(212) 321-5002", "Location": "New York, New York", "incorporationlocation": "Delaware" },
+    { "CompanyName": "Ascent Industries Co.", "TelephoneNumber": "(630)884-9181", "Location": "1400 16th Street, Suite 270, Oak Brook, Illinois 60523", "incorporationlocation": "Delaware" },
+    { "CompanyName": "Aspira Women’s Health Inc.", "TelephoneNumber": "(512) 519-0400", "Location": "12117 Bee Caves Road, Building III, Suite 100, Austin, Texas 78738", "incorporationlocation": "Delaware" },
+    { "CompanyName": "CirTran Corporation", "TelephoneNumber": "(801) 963-5112", "Location": "6360 S Pecos Road, Suite 8, Las Vegas, NV 89120", "incorporationlocation": "Nevada" },
+    { "CompanyName": "Global Clean Energy Holdings, Inc.", "TelephoneNumber": "(661) 742-4600", "Location": "6451 Rosedale Hwy, Bakersfield, California 93308", "incorporationlocation": "Delaware" },
+    { "CompanyName": "CPI Aerostructures, Inc.", "TelephoneNumber": "(631) 586-5200", "Location": "91 Heartland Blvd., Edgewood, NY 11717", "incorporationlocation": "New York" },
+    { "CompanyName": "Dawson Geophysical Company", "TelephoneNumber": "432-684-3000", "Location": "508 West Wall, Suite 800, Midland, Texas 79701", "incorporationlocation": "Texas" },
+    { "CompanyName": "Coyni, Inc.", "TelephoneNumber": "(855) 201-1613", "Location": "3131 Camino Del Rio N, Suite 1400, San Diego, CA 92108", "incorporationlocation": "Nevada" },
+    { "CompanyName": "Blue Dolphin Energy Company", "TelephoneNumber": "713-568-4725", "Location": "801 Travis Street, Suite 2100, Houston, Texas 77002", "incorporationlocation": "Delaware" }
+  ],
+  "report": [
+    { "ReportName": "2024-Arena-10Q-Q1", "ReportType": "10-Q", "Year": 2024, "Period": "Q1", "reportingPeriodEnd": "2024-03-31", "audited": false },
+    { "ReportName": "2024-Ascent-10Q-Q1", "ReportType": "10-Q", "Year": 2024, "Period": "Q1", "reportingPeriodEnd": "2024-03-31", "audited": false },
+    { "ReportName": "2024-Aspira-10Q-Q1", "ReportType": "10-Q", "Year": 2024, "Period": "Q1", "reportingPeriodEnd": "2024-03-31", "audited": false },
+    { "ReportName": "2024-CirTran-10Q-Q1", "ReportType": "10-Q", "Year": 2024, "Period": "Q1", "reportingPeriodEnd": "2024-03-31", "audited": false },
+    { "ReportName": "2024-Global-10Q-Q1", "ReportType": "10-Q", "Year": 2024, "Period": "Q1", "reportingPeriodEnd": "2024-03-31", "audited": false },
+    { "ReportName": "2024-CPI-10Q-Q1", "ReportType": "10-Q", "Year": 2024, "Period": "Q1", "reportingPeriodEnd": "2024-03-31", "audited": false },
+    { "ReportName": "2024-Dawson-10Q-Q1", "ReportType": "10-Q", "Year": 2024, "Period": "Q1", "reportingPeriodEnd": "2024-03-31", "audited": false },
+    { "ReportName": "2024-Coyni-10Q-Q1", "ReportType": "10-Q", "Year": 2024, "Period": "Q1", "reportingPeriodEnd": "2024-03-31", "audited": false },
+    { "ReportName": "2024-Blue-10Q-Q1", "ReportType": "10-Q", "Year": 2024, "Period": "Q1", "reportingPeriodEnd": "2024-03-31", "audited": false }
+  ],
+  "company_report": [
+    { "CompanyName": "THE ARENA GROUP HOLDINGS, INC.", "ReportName": "2024-Arena-10Q-Q1" },
+    { "CompanyName": "Ascent Industries Co.", "ReportName": "2024-Ascent-10Q-Q1" },
+    { "CompanyName": "Aspira Women’s Health Inc.", "ReportName": "2024-Aspira-10Q-Q1" },
+    { "CompanyName": "CirTran Corporation", "ReportName": "2024-CirTran-10Q-Q1" },
+    { "CompanyName": "Global Clean Energy Holdings, Inc.", "ReportName": "2024-Global-10Q-Q1" },
+    { "CompanyName": "CPI Aerostructures, Inc.", "ReportName": "2024-CPI-10Q-Q1" },
+    { "CompanyName": "Dawson Geophysical Company", "ReportName": "2024-Dawson-10Q-Q1" },
+    { "CompanyName": "Coyni, Inc.", "ReportName": "2024-Coyni-10Q-Q1" },
+    { "CompanyName": "Blue Dolphin Energy Company", "ReportName": "2024-Blue-10Q-Q1" }
+  ],
+  "incomeStatement": [
+    { "ReportName": "2024-Arena-10Q-Q1", "periodType": "quarter", "revenue": 28941000, "costOfRevenue": 20008000, "grossProfit": 8933000, "operatingExpenses": 16884000, "operatingIncome": -7951000, "interestExpense": 4339000 },
+    { "ReportName": "2024-Ascent-10Q-Q1", "periodType": "quarter", "revenue": 44110000, "costOfRevenue": 41582000, "grossProfit": 2528000, "operatingExpenses": null, "operatingIncome": -5253000, "interestExpense": 127000 },
+    { "ReportName": "2024-Aspira-10Q-Q1", "periodType": "quarter", "revenue": 2153000, "costOfRevenue": 939000, "grossProfit": 1214000, "operatingExpenses": 5924000, "operatingIncome": -4710000, "interestExpense": 5000 },
+    { "ReportName": "2024-CirTran-10Q-Q1", "periodType": "quarter", "revenue": 429391, "costOfRevenue": 157897, "grossProfit": 271494, "operatingExpenses": 317915, "operatingIncome": -46421, "interestExpense": 184952 },
+    { "ReportName": "2024-Global-10Q-Q1", "periodType": "quarter", "revenue": 567000, "costOfRevenue": 1778000, "grossProfit": -1211000, "operatingExpenses": 25252000, "operatingIncome": -26463000, "interestExpense": 1428000 },
+    { "ReportName": "2024-CPI-10Q-Q1", "periodType": "quarter", "revenue": 19081143, "costOfRevenue": 15527394, "grossProfit": 3553749, "operatingExpenses": 2713904, "operatingIncome": 839845, "interestExpense": 632135 },
+    { "ReportName": "2024-Dawson-10Q-Q1", "periodType": "quarter", "revenue": 31584000, "costOfRevenue": 22342000, "grossProfit": null, "operatingExpenses": null, "operatingIncome": null, "interestExpense": 46000 },
+    { "ReportName": "2024-Coyni-10Q-Q1", "periodType": "quarter", "revenue": null, "costOfRevenue": null, "grossProfit": null, "operatingExpenses": 29526, "operatingIncome": -29526, "interestExpense": null },
+    { "ReportName": "2024-Blue-10Q-Q1", "periodType": "quarter", "revenue": 91022000, "costOfRevenue": 79192000, "grossProfit": 11830000, "operatingExpenses": 1999000, "operatingIncome": 9831000, "interestExpense": 1514000 }
+  ],
+  "cashFlowStatement": [
+    { "ReportName": "2024-Arena-10Q-Q1", "periodType": "quarter", "netIncome": -103358000, "operatingCashFlow": 1965000, "investingCashFlow": 713000, "financingCashFlow": 2603000 },
+    { "ReportName": "2024-Ascent-10Q-Q1", "periodType": "quarter", "netIncome": -5493000, "operatingCashFlow": 263000, "investingCashFlow": 305000, "financingCashFlow": 510000 },
+    { "ReportName": "2024-Aspira-10Q-Q1", "periodType": "quarter", "netIncome": -4629000, "operatingCashFlow": 4431000, "investingCashFlow": 20000, "financingCashFlow": 5269000 },
+    { "ReportName": "2024-CirTran-10Q-Q1", "periodType": "quarter", "netIncome": -518088, "operatingCashFlow": 15087, "investingCashFlow": null, "financingCashFlow": 12091 },
+    { "ReportName": "2024-Global-10Q-Q1", "periodType": "quarter", "netIncome": -27954000, "operatingCashFlow": 26867000, "investingCashFlow": 6841000, "financingCashFlow": 33888000 },
+    { "ReportName": "2024-CPI-10Q-Q1", "periodType": "quarter", "netIncome": 168238, "operatingCashFlow": 960539, "investingCashFlow": 46775, "financingCashFlow": 1069412 },
+    { "ReportName": "2024-Dawson-10Q-Q1", "periodType": "quarter", "netIncome": 5846000, "operatingCashFlow": 1870000, "investingCashFlow": 522000, "financingCashFlow": 582000 },
+    { "ReportName": "2024-Coyni-10Q-Q1", "periodType": "quarter", "netIncome": -29526, "operatingCashFlow": null, "investingCashFlow": null, "financingCashFlow": null },
+    { "ReportName": "2024-Blue-10Q-Q1", "periodType": "quarter", "netIncome": 6624000, "operatingCashFlow": 6250000, "investingCashFlow": null, "financingCashFlow": 345000 }
+  ]
+}

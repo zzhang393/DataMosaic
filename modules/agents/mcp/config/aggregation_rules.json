@@ -1,0 +1,68 @@
+{
+  "aggregation_keywords": {
+    "total": ["总计", "total", "合计", "sum"],
+    "average": ["平均", "average", "avg", "均值"]
+  },
+  "calculation_types": {
+    "sum": {
+      "description": "求和计算",
+      "tolerance": 0.01
+    },
+    "multiply": {
+      "description": "乘法计算",
+      "tolerance": 0.01
+    },
+    "percentage": {
+      "description": "百分比计算",
+      "tolerance": 0.01
+    },
+    "average": {
+      "description": "平均值计算",
+      "tolerance": 0.01
+    }
+  },
+  "field_fix_rules": {
+    "税额": {
+      "type": "amount_unit",
+      "target_format": "亿元",
+      "conversion_rules": [
+        {
+          "pattern": "^(\\d+(?:\\.\\d+)?)\\s+亿$",
+          "action": "remove_space_add_yuan"
+        },
+        {
+          "pattern": "^(\\d+(?:\\.\\d+)?)亿人民币$",
+          "action": "replace_renminbi_with_yuan"
+        },
+        {
+          "pattern": "^(\\d+(?:\\.\\d+)?)亿$",
+          "action": "add_yuan"
+        },
+        {
+          "pattern": "^(\\d+(?:\\.\\d+)?)$",
+          "action": "add_yi_yuan"
+        }
+      ]
+    },
+    "季度": {
+      "type": "quarter_format",
+      "target_format": "第{num}季度",
+      "mapping": {
+        "q1": "第一季度",
+        "Q1": "第一季度",
+        "quarter 1": "第一季度",
+        "q2": "第二季度",
+        "Q2": "第二季度",
+        "quarter 2": "第二季度",
+        "q3": "第三季度",
+        "Q3": "第三季度",
+        "quarter 3": "第三季度",
+        "q4": "第四季度",
+        "Q4": "第四季度",
+        "quarter 4": "第四季度"
+      },
+      "standard_values": ["第一季度", "第二季度", "第三季度", "第四季度"]
+    }
+  }
+}
+

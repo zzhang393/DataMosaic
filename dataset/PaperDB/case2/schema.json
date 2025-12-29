@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "generator": "Paper Database Designer",
+    "generated_at": "2025-10-03T00:00:00Z",
+    "tables_count": 4,
+    "relations_count": 3
+  },
+  "tables": [
+    {
+      "name": "paper",
+      "type": "entity",
+      "fields": [
+        { "name": "title", "type": "TEXT", "constraints": { "primary_key": true, "nullable": false }, "description": "Title of the paper (used as unique identifier)" },
+        { "name": "abstract", "type": "TEXT", "constraints": { "nullable": true }, "description": "Complete abstract or summary of the paper" },
+        { "name": "keywords", "type": "TEXT", "constraints": { "nullable": true }, "description": "Some keywords of the paper" },
+        { "name": "publication_year", "type": "INT", "constraints": { "nullable": true }, "description": "Year of publication" },
+        { "name": "venue", "type": "VARCHAR(255)", "constraints": { "nullable": true }, "description": "Conference or journal name" },
+        { "name": "doi_url", "type": "VARCHAR(255)", "constraints": { "nullable": true }, "description": "DOI or URL of the paper" },
+        { "name": "Overview", "type": "TEXT", "constraints": { "nullable": true }, "description": "A concise summary (1–3 sentences) of the paper’s core contribution"}
+      ]
+    },
+    { 
+      "name": "author",
+      "type": "entity",
+      "fields": [
+        { "name": "name", "type": "VARCHAR(255)", "constraints": { "primary_key": true, "nullable": false }, "description": "Full name of the author" },
+        { "name": "affiliation", "type": "VARCHAR(255)", "constraints": { "nullable": true }, "description": "Affiliation of the author" },
+        { "name": "email", "type": "VARCHAR(255)", "constraints": { "nullable": true }, "description": "Contact email of the author" }
+      ]
+    },
+    {
+      "name": "authorship",
+      "type": "entity",
+      "fields": [
+        { "name": "author_name", "type": "VARCHAR(255)", "constraints": { "foreign_key": true, "nullable": false }, "description": "References author.name" },
+        { "name": "paper_title", "type": "TEXT", "constraints": { "foreign_key": true, "nullable": false }, "description": "References paper.title" },
+        { "name": "role", "type": "VARCHAR(100)", "constraints": { "nullable": true }, "description": "Role of the author (e.g., first author, corresponding author)" }
+      ]
+    },
+    {
+      "name": "references",
+      "type": "entity",
+      "fields": [
+        { "name": "paper_title", "type": "TEXT", "constraints": { "foreign_key": true, "nullable": false }, "description": "The citing paper (FK to paper.title)" },
+        { "name": "ref_title", "type": "TEXT", "constraints": { "nullable": false }, "description": "Title of the referenced paper" },
+        { "name": "ref_authors", "type": "TEXT", "constraints": { "nullable": true }, "description": "List of authors of the referenced paper" },
+        { "name": "ref_publication_year", "type": "INT", "constraints": { "nullable": true }, "description": "Year when the referenced paper was published" },
+        { "name": "ref_venue", "type": "VARCHAR(255)", "constraints": { "nullable": true }, "description": "Venue of the referenced paper" }
+      ]
+    }
+  ],
+  "relations": [
+    { "type": "many-to-many", "from": { "table": "paper", "field": "title" }, "to": {"table": "authorship", "field": "paper_title" } },
+    { "type": "many-to-many", "from": { "table": "author", "field": "name" }, "to": {"table": "authorship", "field": "author_name" } },
+    { "type": "many-to-one", "from": { "table": "references", "field": "paper_title" }, "to": { "table": "paper", "field": "title" } }
+  ]
+}

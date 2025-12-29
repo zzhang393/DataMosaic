@@ -1,0 +1,114 @@
+{
+    "metadata": {
+      "version": "1.0.0",
+      "generator": "Student Database Designer",
+      "generated_at": "2025-09-28T00:00:00Z",
+      "tables_count": 3,
+      "relations_count": 2
+    },
+    "tables": [
+      {
+        "id": "table_1",
+        "name": "Student",
+        "type": "entity",
+        "fields": [
+          { "name": "ID", "type": "INTEGER", "constraints": { "primary_key": true, "nullable": false }, "description": "Unique identifier for each student" },
+          { "name": "Name", "type": "VARCHAR(255)", "constraints": { "nullable": true } },
+          { "name": "Gender", "type": "VARCHAR(50)", "constraints": { "nullable": true } },
+          { "name": "BirthDate", "type": "DATE", "constraints": { "nullable": true } },
+          { "name": "Email", "type": "VARCHAR(255)", "constraints": { "nullable": true } },
+          { "name": "Major", "type": "VARCHAR(255)", "constraints": { "nullable": true } }
+        ]
+      },
+      {
+        "id": "table_2",
+        "name": "Course",
+        "type": "entity",
+        "fields": [
+          { "name": "ID", "type": "VARCHAR(10)", "constraints": { "primary_key": true, "nullable": false }, "description": "Course code (e.g., CS101, MKT201). Only courses that have been successfully selected by students are included." },
+          { "name": "Name", "type": "VARCHAR(255)", "constraints": { "nullable": true } },
+          { "name": "Course_Description", "type": "TEXT", "constraints": { "nullable": true } },
+          { "name": "Credit", "type": "INTEGER", "constraints": { "nullable": true } }
+        ]
+      },
+      {
+        "id": "table_3",
+        "name": "CourseOffering",
+        "type": "relation",
+        "fields": [
+          { "name": "StudentID", "type": "INTEGER", "constraints": { "foreign_key": true, "nullable": false } },
+          { "name": "CourseID", "type": "VARCHAR(10)", "constraints": { "foreign_key": true, "nullable": false }, "description": "References Course.ID (course code)" }
+        ],
+      "relation_extraction": {
+        "enabled": true,
+        "document_sources": [
+          "/home/zhangzhengxuan/Doc2DB/dataset/StudentDB/case1/docs/教务系统运行日志.txt"
+        ],
+        "reference_tables": [
+            {
+              "table": "Student",
+              "data_source": "dataset/StudentDB/case1/answer.json",
+              "key_fields": ["ID", "Name"]
+            },
+            {
+              "table": "Course",
+              "data_source": "dataset/StudentDB/case1/answer.json",
+              "key_fields": ["ID", "Name"]
+            }
+          ]
+        }
+      }
+    ],
+    "relations": [
+      { "id": "ref_1", "type": "many-to-one", "from": { "table": "CourseOffering", "field": "StudentID" }, "to": { "table": "Student", "field": "ID" } },
+      { "id": "ref_2", "type": "many-to-one", "from": { "table": "CourseOffering", "field": "CourseID" }, "to": { "table": "Course", "field": "ID" } }
+    ],
+    "rules": [
+      {
+        "id": "agg_1",
+        "name": "student_credit_limit",
+        "description": "Every student's credit limit: SUM(Course.Credit for courses taken by Student) <= 12",
+        "type": "AGGREGATION",
+        "severity": "ERROR",
+        "scope": "multi_table",
+        "tables": ["CourseOffering", "Course", "Student"],
+        "enabled": true,
+        "validation_logic": {
+          "constraint": "For each student, the sum of credits from all courses they are enrolled in must not exceed 12",
+          "check_method": "aggregation",
+          "aggregation_type": "sum",
+          "group_by": "StudentID",
+          "aggregate_field": "Credit",
+          "aggregate_table": "Course",
+          "join_field": "CourseID",
+          "max_value": 12
+        },
+        "fix_strategy": {
+          "method": "reextraction",
+          "description": "Re-extract course enrollment data from the document to fix credit limit violations"
+        }
+      },
+      {
+        "id": "agg_2",
+        "name": "course_capacity_limit",
+        "description": "Every course's capacity limit: COUNT(DISTINCT StudentID per CourseID) <= 20",
+        "type": "AGGREGATION",
+        "severity": "ERROR",
+        "scope": "single_table",
+        "tables": ["CourseOffering"],
+        "enabled": true,
+        "validation_logic": {
+          "constraint": "For each course, the number of enrolled students must not exceed 20",
+          "check_method": "aggregation",
+          "aggregation_type": "count",
+          "group_by": "CourseID",
+          "max_value": 20
+        },
+        "fix_strategy": {
+          "method": "reextraction",
+          "description": "Re-extract course enrollment data from the document to fix capacity violations"
+        }
+      }
+    ]
+  }
+  

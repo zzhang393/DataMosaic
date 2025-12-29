@@ -1,0 +1,78 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "generator": "Finance Database Designer",
+    "generated_at": "2025-09-26T00:00:00Z",
+    "tables_count": 5,
+    "relations_count": 4
+  },
+  "tables": [
+    {
+      "id": "table_1",
+      "name": "company",
+      "type": "entity",
+      "fields": [
+        { "name": "CompanyName", "type": "VARCHAR(255)", "constraints": { "primary_key": true, "nullable": false }, "description": "Full legal name of the company" },
+        { "name": "TelephoneNumber", "type": "VARCHAR(50)", "constraints": { "nullable": true }, "description": "Registered contact telephone number" },
+        { "name": "Location", "type": "TEXT", "constraints": { "nullable": true }, "description": "Headquarters or primary office address" },
+        { "name": "incorporationlocation", "type": "VARCHAR(255)", "constraints": { "nullable": true }, "description": "Jurisdiction where the company is incorporated" }
+      ]
+    },
+    {
+      "id": "table_2",
+      "name": "report",
+      "type": "entity",
+      "fields": [
+        { "name": "ReportName", "type": "VARCHAR(255)", "constraints": { "primary_key": true, "nullable": false }, "description": "Unique identifier for a specific financial report, formatted as 'year-company_first_word-report_type-quarter' (e.g., '2024-Arena-10Q-Q1')" },
+        { "name": "ReportType", "type": "ENUM('10-Q','10-K','8-K','20-F','Other')", "constraints": { "nullable": false }, "description": "Type of SEC filing (e.g., quarterly, annual, current report)" },
+        { "name": "Year", "type": "INT", "constraints": { "nullable": false }, "description": "Fiscal year of the report" },
+        { "name": "Period", "type": "ENUM('Q1','Q2','Q3','Q4','Annual')", "constraints": { "nullable": false }, "description": "Reporting period (quarterly or annual)" },
+        { "name": "reportingPeriodEnd", "type": "DATE", "constraints": { "nullable": true }, "description": "Date when the report was published" },
+        { "name": "audited", "type": "BOOLEAN", "constraints": { "nullable": true }, "description": "Whether the report is audited (true/false)" }
+      ]
+    },
+    {
+      "id": "table_3",
+      "name": "company_report",
+      "type": "entity",
+      "fields": [ 
+        { "name": "CompanyName", "type": "VARCHAR(255)", "constraints": { "foreign_key": true, "nullable": false }, "description": "Foreign key referencing company.CompanyName"},
+        { "name": "ReportName", "type": "VARCHAR(255)", "constraints": { "foreign_key": true, "nullable": false }, "description": "Foreign key referencing report.ReportName" }
+      ]
+    },
+    {
+      "id": "table_4",
+      "name": "cashFlowStatement",
+      "type": "entity",
+      "fields": [
+        { "name": "ReportName", "type": "VARCHAR(255)", "constraints": { "foreign_key": true, "nullable": false }, "description": "Reference to the associated report" },
+        { "name": "periodType", "type": "VARCHAR(20)", "description": "Period covered by the cash flow statement" },
+        { "name": "netIncome", "type": "DECIMAL(20,4)", "description": "Net income value" },
+        { "name": "operatingCashFlow", "type": "DECIMAL(20,4)", "description": "Cash flow from operating activities" },
+        { "name": "investingCashFlow", "type": "DECIMAL(20,4)", "description": "Net cash flow from investing activities" },
+        { "name": "financingCashFlow", "type": "DECIMAL(20,4)", "description": "Net cash flow from financing activities" }
+      ]
+    },
+    {
+      "id": "table_5",
+      "name": "incomeStatement",
+      "type": "entity",
+      "fields": [
+        { "name": "ReportName", "type": "VARCHAR(255)", "constraints": { "foreign_key": true, "nullable": false }, "description": "Reference to the associated report" },
+        { "name": "periodType", "type": "VARCHAR(20)", "description": "Period covered by the statement (e.g., quarter, year)" },
+        { "name": "revenue", "type": "DECIMAL(20,4)", "description": "Total revenue earned" },
+        { "name": "costOfRevenue", "type": "DECIMAL(20,4)", "description": "Direct costs attributable to producing goods/services" },
+        { "name": "grossProfit", "type": "DECIMAL(20,4)", "description": "Revenue minus cost of revenue" },
+        { "name": "operatingExpenses", "type": "DECIMAL(20,4)", "description": "Total operating expenses" },
+        { "name": "operatingIncome", "type": "DECIMAL(20,4)", "description": "Income from operations" },
+        { "name": "interestExpense", "type": "DECIMAL(20,4)", "description": "Interest expenses incurred" }
+      ]
+    }
+  ],
+  "relations": [
+    { "id": "ref_1", "type": "one-to-many", "from": { "table": "company", "field": "CompanyName" }, "to": { "table": "company_report", "field": "CompanyName" }},
+    { "id": "ref_2", "type": "one-to-many", "from": { "table": "report", "field": "ReportName" }, "to": { "table": "company_report", "field": "ReportName" }},
+    { "id": "ref_3", "type": "many-to-one", "from": { "table": "cashFlowStatement", "field": "ReportName" }, "to": { "table": "report", "field": "ReportName" } },
+    { "id": "ref_4", "type": "many-to-one", "from": { "table": "incomeStatement", "field": "ReportName" }, "to": { "table": "report", "field": "ReportName" } }
+  ]
+}

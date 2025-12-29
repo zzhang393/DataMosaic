@@ -1,0 +1,436 @@
+{
+    "paper": [
+        {
+            "title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+            "abstract": "Natural language generation (NLG) is a critical component of spoken dialogue and it has a significant impact both on usability and perceived quality. Most NLG systems in common use employ rules and heuristics and tend to generate rigid and stylised responses without the natural variation of human language. They are also not easily scaled to systems covering multiple domains and languages. This paper presents a statistical language generator based on a semantically controlled Long Short-term Memory (LSTM) structure. The LSTM generator can learn from unaligned data by jointly optimising sentence planning and surface realisation using a simple cross entropy training criterion, and language variation can be easily achieved by sampling from output candidates. With fewer heuristics, an objective evaluation in two differing test domains showed the proposed method improved performance compared to previous methods. Human judges scored the LSTM system higher on informativeness and naturalness and overall preferred it to the other systems.",
+            "keywords": "Natural Language Generation, Spoken Dialogue Systems, Long Short-Term Memory, Semantically Controlled LSTM, Neural Language Generator",
+            "publication_year": null,
+            "venue": null,
+            "doi_url": null,
+            "overview": "This paper proposes a deep semantically controlled LSTM (SC-LSTM) based neural language generator for spoken dialogue systems that jointly optimizes sentence planning and surface realization from unaligned data. The SC-LSTM model achieves improved BLEU scores and lower slot error rates compared to previous RNN baselines and prior methods across two domains, and is preferred by human judges for informativeness and naturalness."
+        }
+    ],
+    "author": [
+        {
+            "name": "Tsung-Hsien Wen",
+            "affiliation": "Cambridge University Engineering Department, Trumpington Street, Cambridge, CB2 1PZ, UK",
+            "email": "thw28@cam.ac.uk"
+        },
+        {
+            "name": "Milica Gašić",
+            "affiliation": "Cambridge University Engineering Department, Trumpington Street, Cambridge, CB2 1PZ, UK",
+            "email": "mg436@cam.ac.uk"
+        },
+        {
+            "name": "Nikola Mrkšić",
+            "affiliation": "Cambridge University Engineering Department, Trumpington Street, Cambridge, CB2 1PZ, UK",
+            "email": "nm480@cam.ac.uk"
+        },
+        {
+            "name": "Pei-Hao Su",
+            "affiliation": "Cambridge University Engineering Department, Trumpington Street, Cambridge, CB2 1PZ, UK",
+            "email": "phs26@cam.ac.uk"
+        },
+        {
+            "name": "David Vandyke",
+            "affiliation": "Cambridge University Engineering Department, Trumpington Street, Cambridge, CB2 1PZ, UK",
+            "email": "djv27@cam.ac.uk"
+        },
+        {
+            "name": "Steve Young",
+            "affiliation": "Cambridge University Engineering Department, Trumpington Street, Cambridge, CB2 1PZ, UK",
+            "email": "sjy@cam.ac.uk"
+        }
+    ],
+    "authorship": [
+      {
+        "author_name": "Tsung-Hsien Wen",
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "role": "First author"
+      },
+      {
+        "author_name": "Milica Gašić",
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "role": "Second author"
+      },
+      {
+        "author_name": "Nikola Mrkšić",
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "role": "Third author"
+      },
+      {
+        "author_name": "Pei-Hao Su",
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "role": "Fourth author"
+      },
+      {
+        "author_name": "David Vandyke",
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "role": "Fifth author"
+      },
+      {
+        "author_name": "Steve Young",
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "role": "Corresponding author"
+      }
+    ],
+    "references": [
+      {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "A simple domain-independent probabilistic approach to generation",
+        "ref_authors": "Gabor Angeli, Percy Liang, and Dan Klein",
+        "ref_publication_year": "2010",
+        "ref_venue": "Proceedings of the 2010 Conference on EMNLP"
+      },
+      {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Theano: new features and speed improvements",
+        "ref_authors": "Frédéric Bastien, Pascal Lamblin, Razvan Pascanu, James Bergstra, Ian J. Goodfellow, Arnaud Bergeron, Nicolas Bouchard, and Yoshua Bengio",
+        "ref_publication_year": "2012",
+        "ref_venue": "Deep Learning and Unsupervised Feature Learning NIPS 2012 Workshop"
+      },
+      {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Automatic generation of weather forecast texts using comprehensive probabilistic generation-space models",
+        "ref_authors": "Anja Belz",
+        "ref_publication_year": "2008",
+        "ref_venue": "Natural Language Engineering"
+      },
+      {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Learning long-term dependencies with gradient descent is difficult",
+        "ref_authors": "Yoshua Bengio, Patrice Simard, and Paolo Frasconi",
+        "ref_publication_year": "1994",
+        "ref_venue": "Neural Networks, IEEE Transactions on"
+      },
+      {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Theano: a CPU and GPU math expression compiler",
+        "ref_authors": "James Bergstra, Olivier Breuleux, Frédéric Bastien, Pascal Lamblin, Razvan Pascanu, Guillaume Desjardins, Joseph Turian, David Warde-Farley, and Yoshua Bengio",
+        "ref_publication_year": "2010",
+        "ref_venue": "Proceedings of the Python for Scientific Computing Conference"
+      },
+      {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Method and apparatus for building an intelligent automated assistant",
+        "ref_authors": "Adam Cheyer and Didier Guzzoni",
+        "ref_publication_year": "2007",
+        "ref_venue": "US Patent App. 11/518,292"
+      },
+      {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "A unified architecture for natural language processing: Deep neural networks with multitask learning",
+        "ref_authors": "Ronan Collobert and Jason Weston",
+        "ref_publication_year": "2008",
+        "ref_venue": "Proceedings of the 25th International Conference on Machine Learning"
+      },
+      {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Incremental on-line adaptation of pomdp-based dialogue managers to extended domains",
+        "ref_authors": "Milica Gašić, Dongho Kim, Pirros Tsiakoulis, Catherine Breslin, Matthew Henderson, Martin Szummer, Blaise Thomson, and Steve Young",
+        "ref_publication_year": "2014",
+        "ref_venue": "In Proceedings on InterSpeech"
+      },
+      {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Distributed dialogue policies for multi-domain statistical dialogue management",
+        "ref_authors": "Milica Gašić, Dongho Kim, Pirros Tsiakoulis, and Steve Young",
+        "ref_publication_year": "2015",
+        "ref_venue": "In Proceedings on ICASSP"
+      },
+      {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "A novel connectionist system for unconstrained handwriting recognition",
+        "ref_authors": "Alex Graves, Marcus Liwicki, Santiago Fernández, Roman Bertolami, Horst Bunke, and Jürgen Schmidhuber",
+        "ref_publication_year": "2009",
+        "ref_venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+      },
+      {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Speech recognition with deep recurrent neural networks",
+        "ref_authors": "Alex Graves, Abdel-rahman Mohamed, and Geoffrey Hinton",
+        "ref_publication_year": "2013",
+        "ref_venue": "In Acoustics, Speech and Signal Processing (ICASSP), 2013 IEEE International Conference on"
+      },
+      {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Speech recognition with deep recurrent neural networks",
+        "ref_authors": "Alex Graves, Abdel-rahman Mohamed, and Geoffrey E. Hinton",
+        "ref_publication_year": "2013",
+        "ref_venue": "CoRR, abs/1303.5778"
+      },
+      {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Neural turing machines",
+        "ref_authors": "Alex Graves, Greg Wayne, and Ivo Danihelka",
+        "ref_publication_year": "2014",
+        "ref_venue": "CoRR, abs/1410.5401"
+      },
+      {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Generating sequences with recurrent neural networks",
+        "ref_authors": "Alex Graves",
+        "ref_publication_year": "2013",
+        "ref_venue": "CoRR, abs/1308.0850"
+      },
+      {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Robust dialog state tracking using delexicalised recurrent neural networks and unsupervised adaptation",
+        "ref_authors": "Matthew Henderson, Blaise Thomson, and Steve Young",
+        "ref_publication_year": "2014",
+        "ref_venue": "In Proceedings of IEEE Spoken Language Technology"
+      },
+      {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Deep neural networks for acoustic modeling in speech recognition: The shared views of four research groups",
+        "ref_authors": "Geoffrey Hinton, Li Deng, Dong Yu, George Dahl, Abdel-rahman Mohamed, Navdeep Jaitly, Andrew Senior, Vincent Vanhoucke, Patrick Nguyen, Tara Sainath, and Brian Kingsbury",
+        "ref_publication_year": "2012",
+        "ref_venue": "Signal Processing Magazine, IEEE"
+      },
+      {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Long short-term memory",
+        "ref_authors": "Sepp Hochreiter and Jürgen Schmidhuber",
+        "ref_publication_year": "1997",
+        "ref_venue": "Neural Computation"
+      },
+      {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Deep visual-semantic alignments for generating image descriptions",
+        "ref_authors": "Andrej Karpathy and Li Fei-Fei",
+        "ref_publication_year": "2014",
+        "ref_venue": "CoRR"
+      },
+      {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "A statistical nlg framework for aggregated planning and realization",
+        "ref_authors": "Ravi Kondadadi, Blake Howald, and Frank Schilder",
+        "ref_publication_year": "2013",
+        "ref_venue": "In Proceedings of the 51st Annual Meeting of the ACL"
+      },
+      {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Where do phrases come from: Some preliminary experiments in connectionist phrase generation",
+        "ref_authors": "Karen Kukich",
+        "ref_publication_year": "1987",
+        "ref_venue": "Natural Language Generation. Springer Netherlands"
+      },
+      {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Generation that exploits corpus-based statistical knowledge",
+        "ref_authors": "Irene Langkilde and Kevin Knight",
+        "ref_publication_year": "1998",
+        "ref_venue": "Proceedings of the 36th Annual Meeting of the ACL"
+      },
+      {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Controlling user perceptions of linguistic style: Trainable generation of personality traits",
+        "ref_authors": "François Mairesse and Marilyn A. Walker",
+        "ref_publication_year": "2011",
+        "ref_venue": "Computer Linguistics"
+      },
+      {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Stochastic language generation in dialogue using factored language models",
+        "ref_authors": "François Mairesse and Steve Young",
+        "ref_publication_year": "2014",
+        "ref_venue": "Computer Linguistics"
+      },
+      {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Phrase-based statistical language generation using graphical models and active learning",
+        "ref_authors": "François Mairesse, Milica Gašić, Filip Jurčíček, Simon Keizer, Blaise Thomson, Kai Yu, and Steve Young",
+        "ref_publication_year": "2010",
+        "ref_venue": "In Proceedings of the 48th ACL"
+      },
+      {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Stochastic language generation in dialogue using recurrent neural networks with convolutional sentence reranking",
+        "ref_authors": "Tsung-Hsien Wen, Milica Gašić, Dongho Kim, Nikola Mrkšić, Pei-Hao Su, David Vandyke, and Steve Young",
+        "ref_publication_year": "2015",
+        "ref_venue": "In Proceedings of SIGdial"
+      },
+    {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Rhetorical structure theory: Toward a functional theory of text organization",
+        "ref_authors": "William C. Mann, Sandra A. Thompson",
+        "ref_publication_year": "1988",
+        "ref_venue": "Text"
+    },
+    {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Context dependent recurrent neural network language model",
+        "ref_authors": "Tomáš Mikolov, Geoffrey Zweig",
+        "ref_publication_year": "2012",
+        "ref_venue": "IEEE SLT Workshop"
+    },
+    {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Recurrent neural network based language model",
+        "ref_authors": "Tomáš Mikolov, Martin Karafiát, Lukáš Burget, Jan Černocký, Sanjeev Khudanpur",
+        "ref_publication_year": "2010",
+        "ref_venue": "Interspeech"
+    },
+    {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Extensions of recurrent neural network language model",
+        "ref_authors": "Tomáš Mikolov, Stefan Kombrink, Lukáš Burget, Jan H. Černocký, Sanjeev Khudanpur",
+        "ref_publication_year": "2011",
+        "ref_venue": "ICASSP"
+    },
+    {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "RNNLM recurrent neural network language modeling toolkit",
+        "ref_authors": "Tomáš Mikolov, Stefan Kombrink, Anoop Deoras, Lukáś Burget, Jan Černocký",
+        "ref_publication_year": "2011",
+        "ref_venue": "ASRU"
+    },
+    {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Dialogue management using scripts",
+        "ref_authors": "Danilo Mirkovic, Lawrence Cavedon",
+        "ref_publication_year": "2011",
+        "ref_venue": "EP Patent 1,891,625"
+    },
+    {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Stochastic language generation for spoken dialogue systems",
+        "ref_authors": "Alice H. Oh, Alexander I. Rudnicky",
+        "ref_publication_year": "2000",
+        "ref_venue": "ANLP/NAACL Workshop on Conversational Systems"
+    },
+    {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "BLEU: a method for automatic evaluation of machine translation",
+        "ref_authors": "Kishore Papineni, Salim Roukos, Todd Ward, Wei-Jing Zhu",
+        "ref_publication_year": "2002",
+        "ref_venue": "ACL"
+    },
+    {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "GloVe: Global vectors for word representation",
+        "ref_authors": "Jeffrey Pennington, Richard Socher, Christopher Manning",
+        "ref_publication_year": "2014",
+        "ref_venue": "EMNLP"
+    },
+    {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Trainable approaches to surface natural language generation and their application to conversational dialog systems",
+        "ref_authors": "Adwait Ratnaparkhi",
+        "ref_publication_year": "2002",
+        "ref_venue": "Computer Speech and Language"
+    },
+    {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Natural language generation as planning under uncertainty for spoken dialogue systems",
+        "ref_authors": "Verena Rieser, Oliver Lemon",
+        "ref_publication_year": "2010",
+        "ref_venue": "Empirical Methods in Natural Language Generation"
+    },
+    {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Bidirectional recurrent neural networks",
+        "ref_authors": "Mike Schuster, Kuldip K. Paliwal",
+        "ref_publication_year": "1997",
+        "ref_venue": "IEEE Transactions on Signal Processing"
+    },
+    {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Dropout: A simple way to prevent neural networks from overfitting",
+        "ref_authors": "Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, Ruslan Salakhutdinov",
+        "ref_publication_year": "2014",
+        "ref_venue": "Journal of Machine Learning Research"
+    },
+    {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Evaluating automatic extraction of rules for sentence plan construction",
+        "ref_authors": "Amanda Stent, Martin Molina",
+        "ref_publication_year": "2009",
+        "ref_venue": "SIGdial"
+    },
+    {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Trainable sentence planning for complex information presentation in spoken dialog systems",
+        "ref_authors": "Amanda Stent, Rashmi Prasad, Marilyn Walker",
+        "ref_publication_year": "2004",
+        "ref_venue": "ACL"
+    },
+    {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Evaluating evaluation methods for generation in the presence of variation",
+        "ref_authors": "Amanda Stent, Matthew Marge, Mohit Singhai",
+        "ref_publication_year": "2005",
+        "ref_venue": "CICLing"
+    },
+    {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Translation modeling with bidirectional recurrent neural networks",
+        "ref_authors": "Martin Sundermeyer, Tamer Alkhouli, Joern Wuebker, Hermann Ney",
+        "ref_publication_year": "2014",
+        "ref_venue": "EMNLP"
+    },
+    {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Generating text with recurrent neural networks",
+        "ref_authors": "Ilya Sutskever, James Martens, Geoffrey E. Hinton",
+        "ref_publication_year": "2011",
+        "ref_venue": "ICML"
+    },
+    {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Sequence to sequence learning with neural networks",
+        "ref_authors": "Ilya Sutskever, Oriol Vinyals, Quoc V. Le",
+        "ref_publication_year": "2014",
+        "ref_venue": "CoRR"
+    },
+    {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Training a sentence planner for spoken dialogue using boosting",
+        "ref_authors": "Marilyn A. Walker, Owen C. Rambow, Monica Rogati",
+        "ref_publication_year": "2002",
+        "ref_venue": "Computer Speech and Language"
+    },
+    {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Individual and domain adaptation in sentence planning for dialogue",
+        "ref_authors": "Marilyn Walker, Amanda Stent, François Mairesse, Rashmi Prasad",
+        "ref_publication_year": "2007",
+        "ref_venue": "Journal of Artificial Intelligence Research (JAIR)"
+    },
+    {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Backpropagation through time: what it does and how to do it",
+        "ref_authors": "Paul J. Werbos",
+        "ref_publication_year": "1990",
+        "ref_venue": "Proceedings of the IEEE"
+    },
+    {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Spoken language understanding using long short-term memory neural networks",
+        "ref_authors": "Kaisheng Yao, Baolin Peng, Yu Zhang, Dong Yu, Geoffrey Zweig, Yangyang Shi",
+        "ref_publication_year": "2014",
+        "ref_venue": "IEEE SLT Workshop"
+    },
+    {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "POMDP-based statistical spoken dialog systems: A review",
+        "ref_authors": "Steve Young, Milica Gašić, Blaise Thomson, Jason D. Williams",
+        "ref_publication_year": "2013",
+        "ref_venue": "Proceedings of the IEEE"
+    },
+    {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Recurrent neural network regularization",
+        "ref_authors": "Wojciech Zaremba, Ilya Sutskever, Oriol Vinyals",
+        "ref_publication_year": "2014",
+        "ref_venue": "CoRR"
+    },
+    {
+        "paper_title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+        "ref_title": "Chinese poetry generation with recurrent neural networks",
+        "ref_authors": "Xingxing Zhang, Mirella Lapata",
+        "ref_publication_year": "2014",
+        "ref_venue": "EMNLP"
+    }
+]
+}

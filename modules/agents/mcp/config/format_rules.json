@@ -1,0 +1,72 @@
+{
+  "field_format_rules": {
+    "季度": {
+      "pattern": "^第[一二三四]季度$",
+      "standard_examples": ["第一季度", "第二季度", "第三季度", "第四季度"],
+      "description": "中文季度格式",
+      "standard_format": "第{num}季度",
+      "standard_values": ["第一季度", "第二季度", "第三季度", "第四季度"],
+      "mapping": {
+        "q1": "第一季度",
+        "Q1": "第一季度",
+        "quarter 1": "第一季度",
+        "1q": "第一季度",
+        "一季度": "第一季度",
+        "q2": "第二季度",
+        "Q2": "第二季度",
+        "quarter 2": "第二季度",
+        "2q": "第二季度",
+        "二季度": "第二季度",
+        "q3": "第三季度",
+        "Q3": "第三季度",
+        "quarter 3": "第三季度",
+        "3q": "第三季度",
+        "三季度": "第三季度",
+        "q4": "第四季度",
+        "Q4": "第四季度",
+        "quarter 4": "第四季度",
+        "4q": "第四季度",
+        "四季度": "第四季度"
+      },
+      "patterns": {
+        "with_year": "(\\d{4})年?(第[一二三四]季度)",
+        "standard": "第[一二三四]季度"
+      }
+    },
+    "税额": {
+      "pattern": "^\\d+\\.?\\d*亿元$",
+      "standard_examples": ["13.4亿元", "15.7亿元"],
+      "description": "金额格式（亿元）",
+      "standard_format": "{number}亿元",
+      "standard_pattern": "^\\d+\\.?\\d*亿元$",
+      "conversion_rules": [
+        {
+          "pattern": "^(\\d+(?:\\.\\d+)?)\\s+亿$",
+          "template": "{0}亿元",
+          "description": "去掉空格，补充'元'"
+        },
+        {
+          "pattern": "^(\\d+(?:\\.\\d+)?)亿人民币$",
+          "template": "{0}亿元",
+          "description": "替换'亿人民币'为'亿元'"
+        },
+        {
+          "pattern": "^(\\d+(?:\\.\\d+)?)亿$",
+          "template": "{0}亿元",
+          "description": "补充'元'"
+        },
+        {
+          "pattern": "^(\\d+(?:\\.\\d+)?)$",
+          "template": "{0}亿元",
+          "description": "添加单位'亿元'"
+        },
+        {
+          "pattern": "^(\\d+(?:\\.\\d+)?)亿.*",
+          "template": "{0}亿元",
+          "description": "统一为'亿元'"
+        }
+      ]
+    }
+  }
+}
+

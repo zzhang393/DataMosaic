@@ -1,0 +1,46 @@
+{
+  "company": [
+    { "CompanyName": "THE ARENA GROUP HOLDINGS, INC.", "TelephoneNumber": "(212) 321-5002", "Location": "New York, New York", "incorporationlocation": "Delaware" },
+    { "CompanyName": "Ascent Industries Co.", "TelephoneNumber": "(630)884-9181", "Location": "1400 16th Street, Suite 270, Oak Brook, Illinois 60523", "incorporationlocation": "Delaware" },
+    { "CompanyName": "Aspira Women’s Health Inc.", "TelephoneNumber": "(512) 519-0400", "Location": "12117 Bee Caves Road, Building III, Suite 100, Austin, Texas 78738", "incorporationlocation": "Delaware" },
+    { "CompanyName": "Global Clean Energy Holdings, Inc.", "TelephoneNumber": "(661) 742-4600", "Location": "6451 Rosedale Hwy, Bakersfield, California 93308", "incorporationlocation": "Delaware" },
+    { "CompanyName": "CPI Aerostructures, Inc.", "TelephoneNumber": "(631) 586-5200", "Location": "91 Heartland Blvd., Edgewood, NY 11717", "incorporationlocation": "New York" },
+    { "CompanyName": "Dawson Geophysical Company", "TelephoneNumber": "432-684-3000", "Location": "508 West Wall, Suite 800, Midland, Texas 79701", "incorporationlocation": "Texas" },
+    { "CompanyName": "Blue Dolphin Energy Company", "TelephoneNumber": "713-568-4725", "Location": "801 Travis Street, Suite 2100, Houston, Texas 77002", "incorporationlocation": "Delaware" },
+    { "CompanyName": "BioCorRx Inc.","TelephoneNumber":"(714) 462-4880","Location":"2390 East Orangewood Avenue, Suite 500, Anaheim, CA 92806","incorporationlocation":"Nevada"},
+    { "CompanyName": "AULT ALLIANCE, INC.","TelephoneNumber":"(949) 444-5464","Location":"11411 Southern Highlands Parkway, Suite 240, Las Vegas, NV 89141","incorporationlocation":"Delaware"}
+  ],
+  "report": [
+    { "ReportName": "2024-Arena-10Q-Q1", "ReportType": "10-Q", "Year": 2024, "Period": "Q1", "reportingPeriodEnd": "2024-03-31", "audited": false },
+    { "ReportName": "2024-Ascent-10Q-Q1", "ReportType": "10-Q", "Year": 2024, "Period": "Q1", "reportingPeriodEnd": "2024-03-31", "audited": false },
+    { "ReportName": "2024-Aspira-10Q-Q1", "ReportType": "10-Q", "Year": 2024, "Period": "Q1", "reportingPeriodEnd": "2024-03-31", "audited": false },
+    { "ReportName": "2024-Global-10Q-Q1", "ReportType": "10-Q", "Year": 2024, "Period": "Q1", "reportingPeriodEnd": "2024-03-31", "audited": false },
+    { "ReportName": "2024-CPI-10Q-Q1", "ReportType": "10-Q", "Year": 2024, "Period": "Q1", "reportingPeriodEnd": "2024-03-31", "audited": false },
+    { "ReportName": "2024-Dawson-10Q-Q1", "ReportType": "10-Q", "Year": 2024, "Period": "Q1", "reportingPeriodEnd": "2024-03-31", "audited": false },
+    { "ReportName": "2024-Blue-10Q-Q1", "ReportType": "10-Q", "Year": 2024, "Period": "Q1", "reportingPeriodEnd": "2024-03-31", "audited": false },
+    {"ReportName":"2024-BioCorRx-10Q-Q1","ReportType":"10-Q", "Year":2024,"Period":"Q1","reportingPeriodEnd":"2024-03-31","audited":false},
+    {"ReportName":"2024-Ault-10Q-Q1","ReportType":"10-Q","Year":2024,"Period":"Q1","reportingPeriodEnd":"2024-03-31","audited":false}
+  ],
+  "company_report": [
+    { "CompanyName": "THE ARENA GROUP HOLDINGS, INC.", "ReportName": "2024-Arena-10Q-Q1" },
+    { "CompanyName": "Ascent Industries Co.", "ReportName": "2024-Ascent-10Q-Q1" },
+    { "CompanyName": "Aspira Women’s Health Inc.", "ReportName": "2024-Aspira-10Q-Q1" },
+    { "CompanyName": "Global Clean Energy Holdings, Inc.", "ReportName": "2024-Global-10Q-Q1" },
+    { "CompanyName": "CPI Aerostructures, Inc.", "ReportName": "2024-CPI-10Q-Q1" },
+    { "CompanyName": "Dawson Geophysical Company", "ReportName": "2024-Dawson-10Q-Q1" },
+    { "CompanyName": "Blue Dolphin Energy Company", "ReportName": "2024-Blue-10Q-Q1" },
+    { "CompanyName": "BioCorRx Inc.", "ReportName": "2024-BioCorRx-10Q-Q1" },
+    { "CompanyName": "AULT ALLIANCE, INC.", "ReportName": "2024-Ault-10Q-Q1" }
+  ],
+  "cashFlowStatement": [
+    { "ReportName": "2024-Arena-10Q-Q1", "periodType": "quarter", "netIncome": -103358000, "operatingCashFlow": 1965000, "investingCashFlow": 713000, "financingCashFlow": 2603000 },
+    { "ReportName": "2024-Ascent-10Q-Q1", "periodType": "quarter", "netIncome": -5493000, "operatingCashFlow": 263000, "investingCashFlow": 305000, "financingCashFlow": 510000 },
+    { "ReportName": "2024-Aspira-10Q-Q1", "periodType": "quarter", "netIncome": -4629000, "operatingCashFlow": 4431000, "investingCashFlow": 20000, "financingCashFlow": 5269000 },
+    { "ReportName": "2024-Global-10Q-Q1", "periodType": "quarter", "netIncome": -27954000, "operatingCashFlow": 26867000, "investingCashFlow": 6841000, "financingCashFlow": 33888000 },
+    { "ReportName": "2024-CPI-10Q-Q1", "periodType": "quarter", "netIncome": 168238, "operatingCashFlow": 960539, "investingCashFlow": 46775, "financingCashFlow": 1069412 },
+    { "ReportName": "2024-Dawson-10Q-Q1", "periodType": "quarter", "netIncome": 5846000, "operatingCashFlow": 1870000, "investingCashFlow": 522000, "financingCashFlow": 582000 },
+    { "ReportName": "2024-Blue-10Q-Q1", "periodType": "quarter", "netIncome": 6624000, "operatingCashFlow": 6250000, "investingCashFlow": null, "financingCashFlow": 345000 },
+    {"ReportName":"2024-BioCorRx-10Q-Q1","periodType":"quarter","netIncome":-1237463,"operatingCashFlow": 339668,"investingCashFlow":null,"financingCashFlow":375526},
+    {"ReportName":"2024-Ault-10Q-Q1","periodType":"quarter","netIncome":9961000,"operatingCashFlow": 10216000,"investingCashFlow": 1730000,"financingCashFlow":13041000}
+  ]
+}

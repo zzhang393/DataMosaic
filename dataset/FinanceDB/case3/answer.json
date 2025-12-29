@@ -1,0 +1,61 @@
+{
+    "company": [
+      { "CompanyId": "101","CompanyName": "Alpha Dynamics Holdings, Inc.", "TelephoneNumber": "(212) 555-0101", "Location": "100 Broadway, Suite 500, New York, New York 10005", "incorporationlocation": "Delaware" },
+      { "CompanyId": "102","CompanyName": "Beta Bridge Logistics LLC", "TelephoneNumber": "(312) 555-0202", "Location": "200 Michigan Ave, Chicago, Illinois 60601", "incorporationlocation": "Illinois" },
+      { "CompanyId": "103","CompanyName": "Gamma Green Energy Solutions", "TelephoneNumber": "(415) 555-0303", "Location": "300 Market Street, San Francisco, California 94111", "incorporationlocation": "Delaware" },
+      { "CompanyId": "104","CompanyName": "Delta Defense Systems Corp.", "TelephoneNumber": "(703) 555-0404", "Location": "400 Defense Pentagon Way, Arlington, Virginia 22202", "incorporationlocation": "Virginia" },
+      { "CompanyId": "105","CompanyName": "Epsilon Financial Group", "TelephoneNumber": "(617) 555-0505", "Location": "500 State Street, Boston, Massachusetts 02109", "incorporationlocation": "Massachusetts" },
+      { "CompanyId": "106","CompanyName": "Zeta Pharmaceuticals Inc.", "TelephoneNumber": "(919) 555-0606", "Location": "600 Research Triangle Park, Durham, North Carolina 27709", "incorporationlocation": "Delaware" },
+      { "CompanyId": "107","CompanyName": "Eta Engineering Works", "TelephoneNumber": "(313) 555-0707", "Location": "700 Auto Drive, Detroit, Michigan 48226", "incorporationlocation": "Michigan" },
+      { "CompanyId": "108","CompanyName": "Theta Cloud Computing", "TelephoneNumber": "(206) 555-0808", "Location": "800 Pine Street, Seattle, Washington 98101", "incorporationlocation": "Washington" },
+      { "CompanyId": "109","CompanyName": "Iota Micro-Technologies", "TelephoneNumber": "(408) 555-0909", "Location": "900 Silicon Valley Blvd, San Jose, California 95113", "incorporationlocation": "Delaware" },
+      { "CompanyId": "110","CompanyName": "Kappa Knowledge Systems", "TelephoneNumber": "(512) 555-1010", "Location": "1000 Congress Ave, Austin, Texas 78701", "incorporationlocation": "Texas" },
+      { "CompanyId": "111","CompanyName": "Lambda Laser Labs", "TelephoneNumber": "(505) 555-1111", "Location": "1100 Science Parkway, Albuquerque, New Mexico 87102", "incorporationlocation": "New Mexico" },
+      { "CompanyId": "112","CompanyName": "Mu Materials Science", "TelephoneNumber": "(412) 555-1212", "Location": "1200 Steel Tower, Pittsburgh, Pennsylvania 15222", "incorporationlocation": "Pennsylvania" },
+      { "CompanyId": "113","CompanyName": "Nu-Wave Communications", "TelephoneNumber": "(305) 555-1313", "Location": "1300 Ocean Drive, Miami, Florida 33139", "incorporationlocation": "Florida" },
+      { "CompanyId": "114","CompanyName": "Xi Global Strategies", "TelephoneNumber": "(202) 555-1414", "Location": "1400 Pennsylvania Ave NW, Washington, DC 20004", "incorporationlocation": "Delaware" },
+      { "CompanyId": "115","CompanyName": "Omicron Offshore Drilling", "TelephoneNumber": "(713) 555-1515", "Location": "1500 Energy Corridor, Houston, Texas 77079", "incorporationlocation": "Texas" },
+      { "CompanyId": "116","CompanyName": "Pi Mathematical Models", "TelephoneNumber": "(609) 555-1616", "Location": "1600 Princeton Way, Princeton, New Jersey 08540", "incorporationlocation": "New Jersey" },
+      { "CompanyId": "117","CompanyName": "Rho Rapid Transport", "TelephoneNumber": "(404) 555-1717", "Location": "1700 Peachtree St, Atlanta, Georgia 30303", "incorporationlocation": "Georgia" },
+      { "CompanyId": "118","CompanyName": "Sigma Security Solutions", "TelephoneNumber": "(702) 555-1818", "Location": "1800 The Strip, Las Vegas, Nevada 89109", "incorporationlocation": "Nevada" },
+      { "CompanyId": "119","CompanyName": "Tau Tech Industries", "TelephoneNumber": "(602) 555-1919", "Location": "1900 Camelback Rd, Phoenix, Arizona 85016", "incorporationlocation": "Arizona" },
+      { "CompanyId": "120","CompanyName": "Upsilon Utilities Corp.", "TelephoneNumber": "(303) 555-2020", "Location": "2000 Mountain View, Denver, Colorado 80202", "incorporationlocation": "Colorado" },
+      { "CompanyId": "121","CompanyName": "Phi Precision Tools", "TelephoneNumber": "(414) 555-2121", "Location": "2100 Manufacturing Lane, Milwaukee, Wisconsin 53202", "incorporationlocation": "Wisconsin" },
+      { "CompanyId": "122","CompanyName": "Chi Chemical Holdings", "TelephoneNumber": "(225) 555-2222", "Location": "2200 River Road, Baton Rouge, Louisiana 70802", "incorporationlocation": "Louisiana" },
+      { "CompanyId": "123","CompanyName": "Psi Psychological Services", "TelephoneNumber": "(503) 555-2323", "Location": "2300 Wellness Way, Portland, Oregon 97205", "incorporationlocation": "Oregon" },
+      { "CompanyId": "124","CompanyName": "Omega Ultimate Ventures", "TelephoneNumber": "(310) 555-2424", "Location": "2400 Wilshire Blvd, Los Angeles, California 90024", "incorporationlocation": "Delaware" },
+      { "CompanyId": "125","CompanyName": "Alpha-Omega Integrated Systems", "TelephoneNumber": "(646) 555-2525", "Location": "2500 Innovation Park, Brooklyn, New York 11201", "incorporationlocation": "New York" }
+    ],
+
+      "holding": [
+        { "InvestorId": "104", "InvesteeId": "111" },
+        { "InvestorId": "111", "InvesteeId": "112" },
+        
+        { "InvestorId": "101", "InvesteeId": "102" },
+        { "InvestorId": "102", "InvesteeId": "103" },
+        { "InvestorId": "103", "InvesteeId": "108" },
+        { "InvestorId": "101", "InvesteeId": "108" }, 
+        
+        { "InvestorId": "124", "InvesteeId": "123" },
+        
+        { "InvestorId": "117", "InvesteeId": "122" },
+        { "InvestorId": "122", "InvesteeId": "121" },
+        
+        { "InvestorId": "105", "InvesteeId": "106" },
+        { "InvestorId": "105", "InvesteeId": "114" },
+        { "InvestorId": "114", "InvesteeId": "115" },
+        { "InvestorId": "115", "InvesteeId": "113" },
+    
+        { "InvestorId": "104", "InvesteeId": "112" },
+    
+        { "InvestorId": "101", "InvesteeId": "103" },
+        { "InvestorId": "102", "InvesteeId": "108" },
+    
+        { "InvestorId": "117", "InvesteeId": "121" },
+    
+        { "InvestorId": "105", "InvesteeId": "115" },
+        { "InvestorId": "114", "InvesteeId": "113" },
+        { "InvestorId": "105", "InvesteeId": "113" }
+      ]
+
+  }
