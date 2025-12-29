@@ -79,14 +79,14 @@ The evaluation produces four metrics:
 
 Detailed evaluation results comparing different methods can be found in `results.md`. The results show performance across:
 - Multiple LLM models (GPT-4o, Claude-3.5-Sonnet, Qwen2.5-14B/72B)
-- System variants (with/without `\sys` enhancements)
+- System variants (with/without `DataMosaic` enhancements)
 - Baseline methods (LangChain, LangExtract, EAE)
 
 Example results for FinanceDB case1:
 
 | Method | P | R | F1 | LLM Score |
 |--------|-------|-------|--------|-----------|
-| qwen2.5-14b + \sys | 22.88 | 71.37 | 34.65 | 65.00 |
+| qwen2.5-14b + DataMosaic | 22.88 | 71.37 | 34.65 | 65.00 |
 | langchain | 20.85 | 61.11 | 31.09 | 45.00 |
 | gpt-4o | 22.02 | 52.14 | 30.96 | 40.00 |
 
